@@ -26,10 +26,10 @@ Veja a transcrição fonética do mesmo parágrafo:
 
 Clone ou baixe o repositório e execute o script *todutrar.py* com Python 3+, utilizando os seguintes argumentos:
 
-    todutrar.py entrada saúda codificação-da-entrada codificação-da-saída
+    todutrar.py entrada saída codificação-da-entrada codificação-da-saída
 
 1. Entrada: arquivo de texto original
-2. Saída*: arquivo com a transcrição fonética (padrão: "fonetizado.txt")
+2. Saída*: novo arquivo com a transcrição fonética (padrão: "fonetizado.txt")
 3. Codificação da entrada*: codificação do arquivo original (padrão: "utf8")
 4. Codificação da saída*: codificação do arquivo alvo (padrão: "utf8")
 
@@ -56,7 +56,7 @@ A notação é, em grande parte, a mesma das expressões regulares:
 
 ### Regras
 
-As regras são aplicadas a todas as palavras, na ordem em que aparecem.
+As regras são aplicadas a todas as palavras, na ordem em que aparecem. Apenas o grupo entre parênteses é efetivamente substituído.
 Considera-se palavra o conjunto de caracteres entre espaços que não contenha números.
 
 | EXPRESSÃO | RESULTADO |
