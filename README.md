@@ -34,7 +34,7 @@ Clone ou baixe o repositório e execute o script *fonetizador.py* com Python 3+,
 3. Codificação da entrada(\*): codificação do arquivo original (padrão: "utf8")
 4. Codificação da saída(\*): codificação do arquivo alvo (padrão: "utf8")
 
-**(\*)** *Argumentos opcionais*
+**(\*)** Argumentos opcionais
 
 Outra possibilidade é digitar o texto diretamente na linha de comando, utilizando o argumento *-t* :
 
