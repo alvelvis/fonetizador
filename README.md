@@ -1,6 +1,7 @@
 # Tradutor fonético pt-BR
 
-O **todutrar** transcreve arquivos de texto para uma representação semi-fiel do IPA (Alfabeto Fonético Internacional). Algumas opções de transcrição são da variante carioca do português brasileiro; outras, da fonologia da língua portuguesa.
+O **todutrar** transcreve arquivos de texto para uma representação semi-fiel do IPA (Alfabeto Fonético Internacional).
+Algumas opções de transcrição são da variante carioca do português brasileiro; outras, da fonologia da língua portuguesa.
 
 * [Exemplo](#exemplo)
 * [Como usar](#como-usar)
@@ -55,7 +56,8 @@ A notação é, em grande parte, a mesma das expressões regulares:
 
 ### Regras
 
-As regras são aplicadas a todas as palavras, na ordem em que aparecem. Considera-se palavra o conjunto de caracteres entre espaços que não contenha números.
+As regras são aplicadas a todas as palavras, na ordem em que aparecem.
+Considera-se palavra o conjunto de caracteres entre espaços que não contenha números.
 
 | EXPRESSÃO | RESULTADO |
 | -- | -- |
