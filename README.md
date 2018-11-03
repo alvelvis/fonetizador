@@ -1,6 +1,11 @@
 # Tradutor fonético pt-BR
 
-O **todutrar** traduz arquivos de texto para uma representação semi-fiel do IPA (Alfabeto Fonético Internacional). Algumas opções de transcrição são da variante carioca do português brasileiro; outras, são da fonologia da língua portuguesa.
+O **todutrar** transcreve arquivos de texto para uma representação semi-fiel do IPA (Alfabeto Fonético Internacional). Algumas opções de transcrição são da variante carioca do português brasileiro; outras, são da fonologia da língua portuguesa.
+
+* [Exemplo](#exemplo)
+* [Como usar]("#como-usar")
+* [Regras de transformação]("#regras-de-tranformação")
+* [Deficiências]("#deficiências")
 
 # Exemplo
 
@@ -10,7 +15,7 @@ Considere o parágrafo inicial de Memórias Póstumas de Brás Cubas (Machado de
 
 >Algum tempo hesitei se devia abrir estas memórias pelo princípio ou pelo fim, isto é, se poria em primeiro lugar o meu nascimento ou a minha morte. Suposto o uso vulgar seja começar pelo nascimento, duas considerações me levaram a adotar diferente método: a primeira é que eu não sou propriamente um autor defunto, mas um defunto autor, para quem a campa foi outro berço; a segunda é que o escrito ficaria assim mais galante e mais novo. Moisés, que também contou a sua morte, não a pôs no intróito, mas no cabo; diferença radical entre este livro e o Pentateuco.
 
-### Traduzido
+### Transcrito
 
 Veja a transcrição fonética do mesmo parágrafo:
 
