@@ -30,9 +30,9 @@ Clone ou baixe o repositório e execute o script *fonetizador.py* com Python 3+,
     fonetizador.py entrada saída codificação-da-entrada codificação-da-saída
 
 1. Entrada: arquivo de texto original
-2. Saída**\***: novo arquivo com a transcrição fonética (padrão: "fonetizado.txt")
-3. Codificação da entrada**\***: codificação do arquivo original (padrão: "utf8")
-4. Codificação da saída**\***: codificação do arquivo alvo (padrão: "utf8")
+2. Saída(\*): novo arquivo com a transcrição fonética (padrão: "fonetizado.txt")
+3. Codificação da entrada(\*): codificação do arquivo original (padrão: "utf8")
+4. Codificação da saída(\*): codificação do arquivo alvo (padrão: "utf8")
 
 **(\*)** *Argumentos opcionais*
 
@@ -40,7 +40,7 @@ Outra possibilidade é digitar o texto diretamente na linha de comando, utilizan
 
 	fonetizador.py -t texto a ser transcrito foneticamente
 
-\>\>: *teStU a se"2 trÃsKritU fÕne"TiKÃmẼ"TI*
+\>\> *teStU a se"2 trÃsKritU fÕne"TiKÃmẼ"TI*
 
 # Regras de transformação
 
