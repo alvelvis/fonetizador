@@ -111,4 +111,4 @@ A notação é, em grande parte, a mesma das expressões regulares:
 
 
 # Deficiências
-* O **todutrar** não consegue identificar as sílabas tônicas das palavras e, por isso, algumas transcrições fonéticas não conseguem ser fiéis à fala do português brasileiro. Exemplo:
+* O **todutrar** não consegue identificar as sílabas tônicas das palavras e, por isso, algumas transcrições fonéticas não conseguem ser fiéis à fala do português brasileiro.
