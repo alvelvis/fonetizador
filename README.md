@@ -6,7 +6,7 @@ Algumas opções de transcrição são da variante carioca do português brasile
 
 * [Exemplo](#exemplo)
 * [Como usar](#como-usar)
-* [Regras de transformação](#regras-de-tranformação)
+* [Regras de transformação](#regras-de-transformação)
 * [Deficiências](#deficiências)
 
 # Exemplo
