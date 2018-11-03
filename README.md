@@ -44,23 +44,23 @@ Parte das regras para consoantes foram adaptadas do projeto [Metaphone for Brazi
 
 A notação é, em grande parte, a mesma das expressões regulares:
 
-	v 		--> vogais
-	c 		--> consoantes
-	[] 		--> qualquer caracter dentro dos colchetes
-	[^] 		--> qualquer caracter exceto os que estão dentro dos colchetes
-	^ 		--> início da palavra
-	$ 		--> final da palavra
-	? 		--> 1 ou 0
-	+ 		--> 1 ou mais
+	v	--> vogais
+	c	--> consoantes
+	[]	--> qualquer caracter dentro dos colchetes
+	[^]	--> qualquer caracter exceto os que estão dentro dos colchetes
+	^	--> início da palavra
+	$	--> final da palavra
+	?	--> 1 ou 0
+	+	--> 1 ou mais
 
 ### Regras
 
 As regras são aplicadas a todas as palavras, na ordem em que aparecem. Considera-se palavra o conjunto de caracteres entre espaços que não contenha números.
 
-	Y		--> I
+	Y			--> I
 
-	W[LRv]	--> V
-	W[c]	--> "0
+	W[LRv]		--> V
+	W[c]		--> "0
 
 	[AÃÁ][N]$	--> Ã
 	[AÃÁ][M]$	--> ÃW
@@ -77,39 +77,39 @@ As regras são aplicadas a todas as palavras, na ordem em que aparecem. Consider
 	[OÓÕ][MN]S$	--> ÕWS
 	[UÚŨ][MN]S$	--> ŨS
 
-	[^SWNR]S[v] --> Z
+	[^SWNR]S[v]	--> Z
 
-	[AÂÁ][MN][^vH] 	--> Ã
-	[EÊÉ][MN][^vH] 	--> Ẽ
-	[IÎÍ][MN][^vH] 	--> Ĩ
-	[OÔÓ][MN][^vH] 	--> Õ
-	[UÛÚ][MN][^vH] 	--> Ũ
-	[AÂÁ][MN][v] 	--> Ã
-	[EÊÉ][MN][v] 	--> Ẽ
-	[IÎÍ][MN][v] 	--> Ĩ
-	[OÔÒ][MN][v] 	--> Õ
-	[UÛÚ][MN][v] 	--> Ũ
-	[AÂÁ][MN][H] 	--> Ã
-	[EÊÉ][MN][H] 	--> Ẽ
-	[IÎÍ][MN][H] 	--> Ĩ
-	[OÔÓ][MN][H] 	--> Õ
-	[UÛÚ][MN][H] 	--> Ũ
+	[AÂÁ][MN][^vH]	--> Ã
+	[EÊÉ][MN][^vH]	--> Ẽ
+	[IÎÍ][MN][^vH]	--> Ĩ
+	[OÔÓ][MN][^vH]	--> Õ
+	[UÛÚ][MN][^vH]	--> Ũ
+	[AÂÁ][MN][v]	--> Ã
+	[EÊÉ][MN][v]	--> Ẽ
+	[IÎÍ][MN][v]	--> Ĩ
+	[OÔÒ][MN][v]	--> Õ
+	[UÛÚ][MN][v]	--> Ũ
+	[AÂÁ][MN][H]	--> Ã
+	[EÊÉ][MN][H]	--> Ẽ
+	[IÎÍ][MN][H]	--> Ĩ
+	[OÔÓ][MN][H]	--> Õ
+	[UÛÚ][MN][H]	--> Ũ
 
-	[AÁÂ][L][^vH] 	--> AW
-	[EÉÊ][L][^vH] 	--> EW
-	[IÍĨ][L][^vH] 	--> IW
-	[OÓÔ][L][^vH] 	--> OW
-	[UŨÚ][L][^vH] 	--> UW
-	[AÁÂ][L]$ 		--> AW
-	[EÉÊ][L]$ 		--> EW
-	[IĨÍ][L]$ 		--> IW
-	[OÓÔ][L]$ 		--> OW
-	[UŨÚ][L]$ 		--> UW
-	[AÁÂ][U] 		--> AW
-	[EÉÊ][U] 		--> EW
-	[IÍĨ][U] 		--> IW
-	[OÓÔ][U] 		--> OW
-	[UÚŨ][U] 		--> UW
+	[AÁÂ][L][^vH]	--> AW
+	[EÉÊ][L][^vH]	--> EW
+	[IÍĨ][L][^vH]	--> IW
+	[OÓÔ][L][^vH]	--> OW
+	[UŨÚ][L][^vH]	--> UW
+	[AÁÂ][L]$		--> AW
+	[EÉÊ][L]$		--> EW
+	[IĨÍ][L]$		--> IW
+	[OÓÔ][L]$		--> OW
+	[UŨÚ][L]$		--> UW
+	[AÁÂ][U]		--> AW
+	[EÉÊ][U]		--> EW
+	[IÍĨ][U]		--> IW
+	[OÓÔ][U]		--> OW
+	[UÚŨ][U]		--> UW
 
 	[O]$		--> U
 	[O][S]$		--> US
@@ -150,7 +150,7 @@ As regras são aplicadas a todas as palavras, na ordem em que aparecem. Consider
 	PH				--> F
 
 	QU[IEĨẼÍÉÎÊ]	--> K
-	QU[AOÃÕÁÓÂÔ] 	--> K
+	QU[AOÃÕÁÓÂÔ]	--> K
 	Q				--> K
 	GU[IEĨẼÍÉÎÊ]	--> G
 
