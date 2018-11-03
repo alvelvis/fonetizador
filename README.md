@@ -27,20 +27,19 @@ Veja a transcrição fonética do mesmo parágrafo:
 
 * Clone ou baixe o repositório e execute o script *fonetizador.py* com Python 3+, utilizando os seguintes argumentos:
 
-    	fonetizador.py entrada saída codificação-da-entrada codificação-da-saída
+    	\>\> fonetizador.py entrada saída codificação-da-entrada codificação-da-saída
 
 1. Entrada: arquivo de texto original
 2. Saída(\*): novo arquivo com a transcrição fonética (padrão: "fonetizado.txt")
 3. Codificação da entrada(\*): codificação do arquivo original (padrão: "utf8")
 4. Codificação da saída(\*): codificação do arquivo alvo (padrão: "utf8")
 
-**(\*)** Argumentos opcionais
+**(\*)** Argumento opcional
 
 * Outra possibilidade é digitar o texto diretamente na linha de comando, utilizando o argumento *-t* :
 
-		fonetizador.py -t texto a ser transcrito foneticamente
-
-\>\> *teStU a se"2 trÃsKritU fÕne"TiKÃmẼ"TI*
+		\>\> fonetizador.py -t texto a ser transcrito foneticamente
+		teStU a se"2 trÃsKritU fÕne"TiKÃmẼ"TI
 
 # Regras de transformação
 
