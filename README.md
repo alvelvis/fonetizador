@@ -36,6 +36,7 @@ Veja a transcrição fonética do mesmo parágrafo:
 
 (\*) Argumento opcional
 
+
 * Outra possibilidade é digitar o texto diretamente na linha de comando, utilizando o argumento *-t* :
 
 		fonetizador.py -t texto a ser transcrito foneticamente
