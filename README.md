@@ -57,70 +57,26 @@ A notação é, em grande parte, a mesma das expressões regulares:
 
 ### Regras
 
-As regras são aplicadas a todas as palavras, na ordem em que aparecem.
+As regras são aplicadas a todas as palavras, na ordem em que aparecem. Abaixo, você confere apenas algumas delas.
 
 Considera-se palavra o conjunto de caracteres entre espaços que não contenha números.
 
 | EXPRESSÃO | RESULTADO |
 | -- | -- |
 | W[LRv] | V |
-| W[c] | "0 |
 | |
 | [AÃÁ][N]$ | Ã |
 | [AÃÁ][M]$ | ÃW |
 | [Ã][O]$ | ÃW |
-| [EÉẼ][MN]$ | ẼI |
-| [IÍĨ][MN]$ | Ĩ |
-| [OÓÕ][MN]$ | ÕW |
-| [UÚŨ][MN]$ | Ũ |
-| [AÃÁ][N]S$ | ÃS |
-| [AÁÃ][M]S$ | ÃWS |
-| [Ã][O]S$ | ÃWS |
-| [EÉẼ][MN]S$ | ẼIS |
-| [IĨÍ][MN]S$ | ĨS |
-| [OÓÕ][MN]S$ | ÕWS |
-| [UÚŨ][MN]S$ | ŨS |
 | |
 | [^SWNR]S[v] | Z |
 | |
-| [AÂÁ][MN][^vH] | Ã |
-| [EÊÉ][MN][^vH] | Ẽ |
-| [IÎÍ][MN][^vH] | Ĩ |
-| [OÔÓ][MN][^vH] | Õ |
-| [UÛÚ][MN][^vH] | Ũ |
-| [AÂÁ][MN][v] | Ã |
-| [EÊÉ][MN][v] | Ẽ |
-| [IÎÍ][MN][v] | Ĩ |
-| [OÔÒ][MN][v] | Õ |
-| [UÛÚ][MN][v] | Ũ |
-| [AÂÁ][MN][H] | Ã |
-| [EÊÉ][MN][H] | Ẽ |
-| [IÎÍ][MN][H] | Ĩ |
-| [OÔÓ][MN][H] | Õ |
-| [UÛÚ][MN][H] | Ũ |
-| |
 | [AÁÂ][L][^vH] | AW |
-| [EÉÊ][L][^vH] | EW |
-| [IÍĨ][L][^vH] | IW |
-| [OÓÔ][L][^vH] | OW |
-| [UŨÚ][L][^vH] | UW |
-| [AÁÂ][L]$ | AW |
-| [EÉÊ][L]$ | EW |
-| [IĨÍ][L]$ | IW |
-| [OÓÔ][L]$ | OW |
-| [UŨÚ][L]$ | UW |
 | [AÁÂ][U] | AW |
-| [EÉÊ][U] | EW |
-| [IÍĨ][U] | IW |
-| [OÓÔ][U] | OW |
-| [UÚŨ][U] | UW |
 | |
 | [O]$ | U |
-| [O][S]$ | US |
 | [E]$ | I |
-| [E][S]$ | IS |
 | [A]$ | @ |
-| [A][S]$ | @S |
 | [Z]$ | S |
 | |
 | [T][IĨÍ] | "T |
@@ -134,19 +90,13 @@ Considera-se palavra o conjunto de caracteres entre espaços que não contenha n
 | |
 | TH | T |
 | ^EX[v] | Z |
-| EX[AOUÁÓÚÃÕŨ] | KS |
-| EX[PTC] | S |
-| EX[^EIAOUẼĨÃÕŨÉÍÁÓÚ] | KS |
-| [DFMNPQSTVZ][AIOUÃĨÕŨÁÍÓÚ]X | KS |
 | |
-| CHR | K |
 | CH | X |
 | C[ÂAÃÔÕOÛŨU] | K |
 | C[c] | K |
 | C[EÊẼIÎĨ] | S |
 | C$ | K |
 | Ç | S |
-| GH?[EẼÉIĨÍ] | J |
 | ^H[v] | desaparece |
 | LH | "1 |
 | N$ | M |
