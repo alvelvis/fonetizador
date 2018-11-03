@@ -12,7 +12,6 @@ Clone ou baixe o repositório e execute o script *todutrar.py* com os seguintes 
 2. Output*: arquivo com a transcrição fonética (padrão: "fonetizado.txt")
 3. Encoding-input*: codificação do arquivo original (padrão: "utf8")
 4. Encoding-output*: codificação do arquivo alvo (padrão: "utf8") 
-<br>
 (*) **Argumentos opcionais**
 
 ## Regras de transformação
