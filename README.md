@@ -3,9 +3,9 @@
 O **todutrar** transcreve arquivos de texto para uma representação semi-fiel do IPA (Alfabeto Fonético Internacional). Algumas opções de transcrição são da variante carioca do português brasileiro; outras, são da fonologia da língua portuguesa.
 
 * [Exemplo](#exemplo)
-* [Como usar]("#como-usar")
-* [Regras de transformação]("#regras-de-tranformação")
-* [Deficiências]("#deficiências")
+* [Como usar](#como-usar)
+* [Regras de transformação](#regras-de-tranformação)
+* [Deficiências](#deficiências)
 
 # Exemplo
 
