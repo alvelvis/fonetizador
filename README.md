@@ -61,7 +61,7 @@ As regras são aplicadas a todas as palavras, na ordem em que aparecem. Consider
 | -- | -- |
 | W[LRv] | V |
 | W[c] | "0 |
-
+| |
 | [AÃÁ][N]$ | Ã |
 | [AÃÁ][M]$ | ÃW |
 | [Ã][O]$ | ÃW |
@@ -76,9 +76,9 @@ As regras são aplicadas a todas as palavras, na ordem em que aparecem. Consider
 | [IĨÍ][MN]S$ | ĨS |
 | [OÓÕ][MN]S$ | ÕWS |
 | [UÚŨ][MN]S$ | ŨS |
-
+| |
 | [^SWNR]S[v] | Z |
-
+| |
 | [AÂÁ][MN][^vH] | Ã |
 | [EÊÉ][MN][^vH] | Ẽ |
 | [IÎÍ][MN][^vH] | Ĩ |
@@ -94,7 +94,7 @@ As regras são aplicadas a todas as palavras, na ordem em que aparecem. Consider
 | [IÎÍ][MN][H] | Ĩ |
 | [OÔÓ][MN][H] | Õ |
 | [UÛÚ][MN][H] | Ũ |
-
+| |
 | [AÁÂ][L][^vH] | AW |
 | [EÉÊ][L][^vH] | EW |
 | [IÍĨ][L][^vH] | IW |
@@ -110,7 +110,7 @@ As regras são aplicadas a todas as palavras, na ordem em que aparecem. Consider
 | [IÍĨ][U] | IW |
 | [OÓÔ][U] | OW |
 | [UÚŨ][U] | UW |
-
+| |
 | [O]$ | U |
 | [O][S]$ | US |
 | [E]$ | I |
@@ -118,23 +118,23 @@ As regras são aplicadas a todas as palavras, na ordem em que aparecem. Consider
 | [A]$ | @ |
 | [A][S]$ | @S |
 | [Z]$ | S |
-
+| |
 | [T][IĨÍ] | "T |
 | [D][IĨÍ] | "D |
-
+| |
 | SS | S |
 | SH | X |
 | SC[EIẼĨÉÍ] | S |
 | SC[AUOÃŨÕÁÚÓ] | SK |
 | SCH | X |
-
+| |
 | TH | T |
 | ^EX[v] | Z |
 | EX[AOUÁÓÚÃÕŨ] | KS |
 | EX[PTC] | S |
 | EX[^EIAOUẼĨÃÕŨÉÍÁÓÚ] | KS |
 | [DFMNPQSTVZ][AIOUÃĨÕŨÁÍÓÚ]X | KS |
-
+| |
 | CHR | K |
 | CH | X |
 | C[ÂAÃÔÕOÛŨU] | K |
@@ -148,12 +148,12 @@ As regras são aplicadas a todas as palavras, na ordem em que aparecem. Consider
 | N$ | M |
 | NH | "3 |
 | PH | F |
-
+| |
 | QU[IEĨẼÍÉÎÊ] | K |
 | QU[AOÃÕÁÓÂÔ] | K |
 | Q | K |
 | GU[IEĨẼÍÉÎÊ] | G |
-
+| |
 | ^R | "2 |
 | R$ | "2 |
 | RR | "2 |
