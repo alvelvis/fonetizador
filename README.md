@@ -40,7 +40,7 @@ Veja a transcrição fonética do mesmo parágrafo:
 
 		fonetizador.py -t texto a ser transcrito foneticamente
 		
-	\>> teStU a se"2 trÃsKritU fÕne"TiKÃmẼ"TI
+		>teStU a se"2 trÃsKritU fÕne"TiKÃmẼ"TI
 
 # Regras de transformação
 
