@@ -60,33 +60,26 @@ A notação é, em grande parte, a mesma das expressões regulares:
 | EXPRESSÃO | RESULTADO |
 | -- | -- |
 | W[LRv] | V |
-| |
+| [Ã][O]$ | ÃW |
 | [AÃÁ][N]$ | Ã |
 | [AÃÁ][M]$ | ÃW |
-| [Ã][O]$ | ÃW |
-| |
+| [EẼÈ][M]$ | ẼI |
 | [^SWNR]S[v] | Z |
-| |
 | [AÁÂ][L][^vH] | AW |
 | [AÁÂ][U] | AW |
-| |
 | [O]$ | U |
 | [E]$ | I |
 | [A]$ | @ |
 | [Z]$ | S |
-| |
 | [T][IĨÍ] | "T |
 | [D][IĨÍ] | "D |
-| |
 | SS | S |
 | SH | X |
 | SC[EIẼĨÉÍ] | S |
 | SC[AUOÃŨÕÁÚÓ] | SK |
 | SCH | X |
-| |
 | TH | T |
 | ^EX[v] | Z |
-| |
 | CH | X |
 | C[ÂAÃÔÕOÛŨU] | K |
 | C[c] | K |
@@ -98,12 +91,10 @@ A notação é, em grande parte, a mesma das expressões regulares:
 | N$ | M |
 | NH | "3 |
 | PH | F |
-| |
 | QU[IEĨẼÍÉÎÊ] | K |
 | QU[AOÃÕÁÓÂÔ] | K |
 | Q | K |
 | GU[IEĨẼÍÉÎÊ] | G |
-| |
 | ^R | "2 |
 | R$ | "2 |
 | RR | "2 |
