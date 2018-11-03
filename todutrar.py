@@ -180,14 +180,14 @@ if __name__ == '__main__':
 	#CHECA ARGUMENTOS
 	if len(sys.argv) <= 1:
 		print('Argumentos esperados para o todutrar')
-		print('uso: todutrar.py input output encoding-input encoding-output')
+		print('uso: todutrar.py entrada saída codificação-da-entrada codificação-da-saída')
 		print("Tente `-h' para mais informações")
 	else:
 		if sys.argv[1] == '-h':
-			print('uso: todutrar.py input output encoding-input encoding-output')
-			print('É obrigatório informar apenas o input (arquivo de texto original)')
-			print('Output padrão: "fonetizado.txt"')
-			print('Encoding padrão: utf8')
+			print('uso: todutrar.py entrada saída codificação-da-entrada codificação-da-saída')
+			print('É obrigatório informar apenas a entrada (arquivo de texto original)')
+			print('Saída padrão: "fonetizado.txt"')
+			print('Codificação padrão: utf8')
 		elif len(sys.argv) == 2: main(sys.argv[1])
 		elif len(sys.argv) == 3: main(sys.argv[1], sys.argv[2])
 		elif len(sys.argv) == 4: main(sys.argv[1], sys.argv[2], sys.argv[3])

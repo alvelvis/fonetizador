@@ -25,12 +25,12 @@ Veja a transcrição fonética do mesmo parágrafo:
 
 Clone ou baixe o repositório e execute o script *todutrar.py* com os seguintes argumentos:
 
-    python todutrar.py input output encoding-input encoding-output
+    python todutrar.py entrada saúda codificação-da-entrada codificação-da-saída
 
-1. Input: arquivo de texto original
-2. Output*: arquivo com a transcrição fonética (padrão: "fonetizado.txt")
-3. Encoding-input*: codificação do arquivo original (padrão: "utf8")
-4. Encoding-output*: codificação do arquivo alvo (padrão: "utf8")
+1. Entrada: arquivo de texto original
+2. Saída*: arquivo com a transcrição fonética (padrão: "fonetizado.txt")
+3. Codificação da entrada*: codificação do arquivo original (padrão: "utf8")
+4. Codificação da saída*: codificação do arquivo alvo (padrão: "utf8")
 
 
 (*) **Argumentos opcionais**
