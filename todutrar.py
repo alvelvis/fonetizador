@@ -170,11 +170,6 @@ def main(caminho, output='fonetizado.txt', CODE='utf8', CODEFINAL='utf8'):
 	for i,linha in enumerate(texto):
 		texto[i] = " ".join(texto[i])
 
-	#REGULARIZA A PONTUAÇÃO
-	for i in range(len(texto)):
-		for ponto in string.punctuation:
-			texto[i] = texto[i].replace(' ' + ponto + ' ', ponto)
-
 	#SALVA ARQUIVO OUTPUT -> cada item da lista recebe um "\n"
 	with open(output, 'w', encoding=CODEFINAL) as arq:
 		arq.write("\n".join(texto))
