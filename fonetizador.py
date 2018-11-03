@@ -10,15 +10,15 @@ def fonetiza(palavra):
 	#CASO CONTRÁRIO, NÃO MODIFICA A PALAVRA (retorna ela própria)
 	if re.match(r'[^\d\s]+', palavra):
 
-		#CRIA A LISTA DAS REGRAS DE FONETIZAÇÃO
-		expressao = list()
-
 		#VOGAIS E CONSOANTESS
 		v = r'AEIOUÁÉÍÓÚÃẼĨÕŨÀÈÌÒÙÂÊÎÔÛ@'
 		c = r'BCDFGHJKLMNPQRSTVWXYZ"'
 
-		#REGRAS DE FONETIZAÇÃO
-		#('expressão regular', 'substituto', grupo anterior que permanece, grupo posterior que permanece)
+		#CRIA A LISTA DAS REGRAS DE FONETIZAÇÃO
+		expressao = list()
+
+		#ADICIONA AS REGRAS DE FONETIZAÇÃO
+		#('expressão regular','substituto',grupo anterior que permanece,grupo posterior que permanece)
 		expressao.extend([							
 								(r'Y','I',0,0),
 

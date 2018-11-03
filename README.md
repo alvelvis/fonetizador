@@ -44,7 +44,13 @@ Veja a transcrição fonética do mesmo parágrafo:
 
 # Regras de transformação
 
-Parte das regras para consoantes foram adaptadas do projeto [Metaphone for Brazilian Portuguese](https://sourceforge.net/p/metaphoneptbr/code/ci/master/tree/README#l56). As regras são aplicadas a todas as palavras, na ordem em que aparecem. Considera-se *palavra* o conjunto de caracteres entre espaços que não contenha números. Abaixo, você confere algumas das regras.
+Parte das regras para consoantes foram adaptadas do projeto [Metaphone for Brazilian Portuguese](https://sourceforge.net/p/metaphoneptbr/code/ci/master/tree/README#l56).
+
+As regras são aplicadas a todas as palavras, na ordem em que aparecem.
+
+Considera-se *palavra* o conjunto de caracteres entre espaços que não contenha números.
+
+Abaixo, você confere algumas das regras.
 
 ### Notação
 
@@ -67,7 +73,7 @@ A notação é, em grande parte, a mesma das expressões regulares:
 | [Ã][O]$ | ÃW |
 | [AÃÁ][N]$ | Ã |
 | [AÃÁ][M]$ | ÃW |
-| [EẼÈ][M]$ | ẼI |
+| [EẼÉ][M]$ | ẼI |
 | [^SWNR]S[v] | Z |
 | [AÁÂ][L][^vH] | AW |
 | [AÁÂ][U] | AW |
@@ -103,7 +109,6 @@ A notação é, em grande parte, a mesma das expressões regulares:
 | R$ | "2 |
 | RR | "2 |
 | R[c] | "2 |
-
 
 # Deficiências
 * O **fonetizador** não consegue identificar as sílabas tônicas das palavras e, por isso, algumas transcrições fonéticas não conseguem ser fiéis à fala do português brasileiro.
