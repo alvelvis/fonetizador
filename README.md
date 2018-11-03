@@ -40,7 +40,7 @@ Clone ou baixe o repositório e execute o script *todutrar.py* com Python 3+, ut
 
 # Regras de transformação
 
-Parte das regras para consoantes foram adaptadas do projeto [Metaphone for Brazilian Portuguese](https://sourceforge.net/p/metaphoneptbr/code/ci/master/tree/README#l56).
+Parte das regras para consoantes foram adaptadas do projeto [Metaphone for Brazilian Portuguese](https://sourceforge.net/p/metaphoneptbr/code/ci/master/tree/README#l56). As regras são aplicadas a todas as palavras, na ordem em que aparecem. Considera-se *palavra* o conjunto de caracteres entre espaços que não contenha números. Abaixo, você confere algumas das regras.
 
 ### Notação
 
@@ -56,10 +56,6 @@ A notação é, em grande parte, a mesma das expressões regulares:
 	+	--> 1 ou mais
 
 ### Regras
-
-As regras são aplicadas a todas as palavras, na ordem em que aparecem. Abaixo, você confere apenas algumas delas.
-
-Considera-se palavra o conjunto de caracteres entre espaços que não contenha números.
 
 | EXPRESSÃO | RESULTADO |
 | -- | -- |
