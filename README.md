@@ -21,7 +21,7 @@ Considere o parágrafo inicial de Memórias Póstumas de Brás Cubas (Machado de
 
 Veja a transcrição fonética do mesmo parágrafo:
 
->AWgŨ tẼpU eZitei sI devi@ abri"2 est@S mẼmóri@S pelU prĨcípiU OW pelU fĨ , istU é , sI pori@ ẼI prĨmeirU luga"2 U mEW naSĨmẼtU OW a mĨ"3@ mo"2"TI . SupostU U uZU vUWga"2 sej@ KÕmeSa"2 pelU naSĨmẼtU , du@S KÕsideraSõIS mI levarÃW a adota"2 "DiferẼ"TI métodU : a prĨmeir@ é KI EW nÃW sOW propriÃmẼ"TI Ũ AWto"2 defŨtU , m@S Ũ defŨtU AWto"2 , par@ KẼI a KÃp@ foi OWtrU be"2SU ; a segŨd@ é KI U esKritU fiKari@ aSĨ mais galÃ"TI I mais novU . MoiZés , KI tÃbẼI KÕtOW a su@ mo"2"TI , nÃW a pôs nU ĨtróitU , m@S nU KabU ; "DiferẼS@ "2a"DiKAW ẼtrI es"TI livrU I U PẼtatEWKU .
+>AWgŨ tẼpU eZitei sI devi@ abri"2 est@S mẼmóri@S pelU prĨcípiU OW pelU fĨ , istU é , sI pori@ ẼI prĨmeirU luga"2 U mEW naSĨmẼtU OW a mĨ"3@ mo"2"TI . SupostU U uZU vUWga"2 sej@ KÕmeSa"2 pelU naSĨmẼtU , du@S KÕsideraSõIS mI levarÃW a adota"2 "DiferẼ"TI métodU : a prĨmeir@ é KI EW nÃW sOW propriÃmẼ"TI Ũ AWto"2 defŨtU , mas Ũ defŨtU AWto"2 , par@ KẼI a KÃp@ foi OWtrU be"2SU ; a segŨd@ é KI U esKritU fiKari@ aSĨ mais galÃ"TI I mais novU . MoiZés , KI tÃbẼI KÕtOW a su@ mo"2"TI , nÃW a pôs nU ĨtróitU , mas nU KabU ; "DiferẼS@ "2a"DiKAW ẼtrI es"TI livrU I U PẼtatEWKU .
 
 # Como usar
 
