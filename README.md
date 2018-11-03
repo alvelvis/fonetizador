@@ -39,7 +39,7 @@ Veja a transcrição fonética do mesmo parágrafo:
 * Outra possibilidade é digitar o texto diretamente na linha de comando, utilizando o argumento *-t* :
 
 		fonetizador.py -t texto a ser transcrito foneticamente
-\>> teStU a se"2 trÃsKritU fÕne"TiKÃmẼ"TI
+		>\>> teStU a se"2 trÃsKritU fÕne"TiKÃmẼ"TI
 
 # Regras de transformação
 
