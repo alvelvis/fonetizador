@@ -63,7 +63,7 @@ A notação é, em grande parte, a mesma das expressões regulares:
 
 As regras são aplicadas a todas as palavras, na ordem em que aparecem. Considera-se *palavra* o conjunto de caracteres entre espaços que não contenha números.
 
-Abaixo, você confere algumas das regras.
+Abaixo, você confere algumas das regras de transcrição fonética:
 
 | EXPRESSÃO | RESULTADO |
 | -- | -- |
