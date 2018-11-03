@@ -34,7 +34,7 @@ Veja a transcrição fonética do mesmo parágrafo:
 3. Codificação da entrada(\*): codificação do arquivo original (padrão: "utf8")
 4. Codificação da saída(\*): codificação do arquivo alvo (padrão: "utf8")
 
-	**(\*)** Argumento opcional
+(\*) Argumento opcional
 
 * Outra possibilidade é digitar o texto diretamente na linha de comando, utilizando o argumento *-t* :
 
