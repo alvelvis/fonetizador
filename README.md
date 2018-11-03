@@ -44,23 +44,23 @@ Parte das regras para consoantes foram adaptadas do projeto [Metaphone for Brazi
 
 A notação é, em grande parte, a mesma das expressões regulares:
 
-	v 	--> vogais
-	c 	--> consoantes
-	[]	--> qualquer caracter dentro dos colchetes
-	[^]	--> qualquer caracter exceto os que estão dentro dos colchetes
-	^	--> início da palavra
-	$	--> final da palavra
-	?	--> 1 ou 0
-	+	--> 1 ou mais
+	v 		--> vogais
+	c 		--> consoantes
+	[] 		--> qualquer caracter dentro dos colchetes
+	[^] 		--> qualquer caracter exceto os que estão dentro dos colchetes
+	^ 		--> início da palavra
+	$ 		--> final da palavra
+	? 		--> 1 ou 0
+	+ 		--> 1 ou mais
 
 ### Regras
 
 As regras são aplicadas a todas as palavras, na ordem em que aparecem. Considera-se palavra o conjunto de caracteres entre espaços que não contenha números.
 
-	Y 				--> I
+	Y 		--> I
 
-	W[LRv] 			--> V
-	W[c] 			--> "0
+	W[LRv] 		--> V
+	W[c] 		--> "0
 
 	[AÃÁ][N]$ 		--> Ã
 	[AÃÁ][M]$ 		--> ÃW
@@ -72,34 +72,34 @@ As regras são aplicadas a todas as palavras, na ordem em que aparecem. Consider
 	[AÃÁ][N]S$ 		--> ÃS
 	[AÁÃ][M]S$ 		--> ÃWS
 	[Ã][O]S$ 		--> ÃWS
-	[EÉẼ][MN]S$ 	--> ẼIS
-	[IĨÍ][MN]S$ 	--> ĨS
-	[OÓÕ][MN]S$ 	--> ÕWS
-	[UÚŨ][MN]S$ 	--> ŨS
+	[EÉẼ][MN]S$ 		--> ẼIS
+	[IĨÍ][MN]S$ 		--> ĨS
+	[OÓÕ][MN]S$ 		--> ÕWS
+	[UÚŨ][MN]S$ 		--> ŨS
 
-	[^SWNR]S[v] 	--> Z
+	[^SWNR]S[v] 		--> Z
 
-	[AÂÁ][MN][^vH] 	--> Ã
-	[EÊÉ][MN][^vH] 	--> Ẽ
-	[IÎÍ][MN][^vH] 	--> Ĩ
-	[OÔÓ][MN][^vH] 	--> Õ
-	[UÛÚ][MN][^vH] 	--> Ũ
-	[AÂÁ][MN][v] 	--> Ã
-	[EÊÉ][MN][v] 	--> Ẽ
-	[IÎÍ][MN][v] 	--> Ĩ
-	[OÔÒ][MN][v] 	--> Õ
-	[UÛÚ][MN][v] 	--> Ũ
-	[AÂÁ][MN][H] 	--> Ã
-	[EÊÉ][MN][H] 	--> Ẽ
-	[IÎÍ][MN][H] 	--> Ĩ
-	[OÔÓ][MN][H] 	--> Õ
-	[UÛÚ][MN][H] 	--> Ũ
+	[AÂÁ][MN][^vH] 		--> Ã
+	[EÊÉ][MN][^vH] 		--> Ẽ
+	[IÎÍ][MN][^vH] 		--> Ĩ
+	[OÔÓ][MN][^vH] 		--> Õ
+	[UÛÚ][MN][^vH] 		--> Ũ
+	[AÂÁ][MN][v] 		--> Ã
+	[EÊÉ][MN][v] 		--> Ẽ
+	[IÎÍ][MN][v] 		--> Ĩ
+	[OÔÒ][MN][v] 		--> Õ
+	[UÛÚ][MN][v] 		--> Ũ
+	[AÂÁ][MN][H] 		--> Ã
+	[EÊÉ][MN][H] 		--> Ẽ
+	[IÎÍ][MN][H] 		--> Ĩ
+	[OÔÓ][MN][H] 		--> Õ
+	[UÛÚ][MN][H] 		--> Ũ
 
-	[AÁÂ][L][^vH] 	--> AW
-	[EÉÊ][L][^vH] 	--> EW
-	[IÍĨ][L][^vH]	--> IW
-	[OÓÔ][L][^vH] 	--> OW
-	[UŨÚ][L][^vH] 	--> UW
+	[AÁÂ][L][^vH] 		--> AW
+	[EÉÊ][L][^vH] 		--> EW
+	[IÍĨ][L][^vH] 		--> IW
+	[OÓÔ][L][^vH] 		--> OW
+	[UŨÚ][L][^vH] 		--> UW
 	[AÁÂ][L]$ 		--> AW
 	[EÉÊ][L]$ 		--> EW
 	[IĨÍ][L]$ 		--> IW
@@ -111,53 +111,53 @@ As regras são aplicadas a todas as palavras, na ordem em que aparecem. Consider
 	[OÓÔ][U] 		--> OW
 	[UÚŨ][U] 		--> UW
 
-	[O]$ 			--> U
+	[O]$ 		--> U
 	[O][S]$ 		--> US
-	[E]$ 			--> I
+	[E]$ 		--> I
 	[E][S]$ 		--> IS
-	[A]$ 			--> @
+	[A]$ 		--> @
 	[A][S]$ 		--> @S
-	[Z]$ 			--> S
+	[Z]$ 		--> S
 
 	[T][IĨÍ] 		--> "T
 	[D][IĨÍ] 		--> "D
 
-	SS 				--> S
-	SH 				--> X
+	SS 		--> S
+	SH 		--> X
 	SC[EIẼĨÉÍ] 		--> S
-	SC[AUOÃŨÕÁÚÓ] 	--> SK
-	SCH 			--> X
+	SC[AUOÃŨÕÁÚÓ] 		--> SK
+	SCH 		--> X
 
-	TH 				--> T
-	^EX[v] 			--> Z
-	EX[AOUÁÓÚÃÕŨ] 	--> KS
+	TH 		--> T
+	^EX[v] 		--> Z
+	EX[AOUÁÓÚÃÕŨ] 		--> KS
 	EX[PTC] 		--> S
-	EX[^EIAOUẼĨÃÕŨÉÍÁÓÚ] 			--> KS
-	[DFMNPQSTVZ][AIOUÃĨÕŨÁÍÓÚ]X 	--> KS
+	EX[^EIAOUẼĨÃÕŨÉÍÁÓÚ] 		--> KS
+	[DFMNPQSTVZ][AIOUÃĨÕŨÁÍÓÚ]X 		--> KS
 
-	CHR 			--> K
-	CH 				--> X
-	C[ÂAÃÔÕOÛŨU] 	--> K
-	C[c]			--> K
+	CHR 		--> K
+	CH 		--> X
+	C[ÂAÃÔÕOÛŨU] 		--> K
+	C[c] 		--> K
 	C[EÊẼIÎĨ] 		--> S
-	C$ 				--> K
-	Ç 				--> S
-	GH?[EẼÉIĨÍ] 	--> J
-	^H[v] 			--> desaparece
-	LH 				--> "1
-	N$ 				--> M
-	NH 				--> "3
-	PH 				--> F
+	C$ 		--> K
+	Ç 		--> S
+	GH?[EẼÉIĨÍ] 		--> J
+	^H[v] 		--> desaparece
+	LH 		--> "1
+	N$ 		--> M
+	NH 		--> "3
+	PH 		--> F
 
-	QU[IEĨẼÍÉÎÊ] 	--> K
-	QU[AOÃÕÁÓÂÔ] 	--> K
-	Q 				--> K
-	GU[IEĨẼÍÉÎÊ] 	--> G
+	QU[IEĨẼÍÉÎÊ] 		--> K
+	QU[AOÃÕÁÓÂÔ] 		--> K
+	Q 		--> K
+	GU[IEĨẼÍÉÎÊ] 		--> G
 
-	^R 				--> "2
-	R$ 				--> "2
-	RR 				--> "2
-	R[c] 			--> "2
+	^R 		--> "2
+	R$ 		--> "2
+	RR 		--> "2
+	R[c] 		--> "2
 
 # Deficiências
 * O **todutrar** não consegue identificar as sílabas tônicas das palavras e, por isso, algumas transcrições fonéticas não conseguem ser fiéis à fala do português brasileiro. Exemplo:
