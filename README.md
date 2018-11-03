@@ -1,6 +1,6 @@
 # Tradutor fonético pt-BR
 
-O **todutrar** transcreve arquivos de texto para uma representação semi-fiel do IPA (Alfabeto Fonético Internacional).
+O **fonetizador** transcreve arquivos de texto para uma representação semi-fiel do IPA (Alfabeto Fonético Internacional).
 
 Algumas opções de transcrição são da variante carioca do português brasileiro; outras, da fonologia da língua portuguesa.
 
@@ -25,9 +25,9 @@ Veja a transcrição fonética do mesmo parágrafo:
 
 # Como usar
 
-Clone ou baixe o repositório e execute o script *todutrar.py* com Python 3+, utilizando os seguintes argumentos:
+Clone ou baixe o repositório e execute o script *fonetizador.py* com Python 3+, utilizando os seguintes argumentos:
 
-    todutrar.py entrada saída codificação-da-entrada codificação-da-saída
+    fonetizador.py entrada saída codificação-da-entrada codificação-da-saída
 
 1. Entrada: arquivo de texto original
 2. Saída*: novo arquivo com a transcrição fonética (padrão: "fonetizado.txt")
@@ -102,4 +102,4 @@ A notação é, em grande parte, a mesma das expressões regulares:
 
 
 # Deficiências
-* O **todutrar** não consegue identificar as sílabas tônicas das palavras e, por isso, algumas transcrições fonéticas não conseguem ser fiéis à fala do português brasileiro.
+* O **fonetizador** não consegue identificar as sílabas tônicas das palavras e, por isso, algumas transcrições fonéticas não conseguem ser fiéis à fala do português brasileiro.
