@@ -48,8 +48,8 @@ Veja a transcrição fonética do mesmo parágrafo:
 | símbolo | som |
 | -- | -- |
 | AEIOU | vogais átonas e orais |
-| ÄËÏÖÜ | vogais tônicas e orais |
 | ÃẼĨÕŨ | vogais átonas e nasais |
+| ÄËÏÖÜ | vogais tônicas e orais |
 | ÂÊÎÔÛ | vogais tônicas e nasais |
 | "T | **t**ia |
 | "D | **d**ia / **d**iadema |
