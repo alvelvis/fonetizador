@@ -125,5 +125,5 @@ Abaixo, você confere algumas das regras de transcrição fonética:
 | atual | ideal |
 | -- | -- |
 | prĨmeirU | primeirU |
-| naSĨmẼtU | naSĨmẼtU |
+| naSĨmẼtU | naSimẼtU |
 | KÕmeSa"2 | KomeSa"2 |
