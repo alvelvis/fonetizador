@@ -109,4 +109,25 @@ Abaixo, você confere algumas das regras de transcrição fonética:
 | R[c] | "2 |
 
 # Deficiências
+
 * O **fonetizador** não consegue identificar as sílabas tônicas das palavras e, por isso, algumas transcrições fonéticas não conseguem ser fiéis à fala do português brasileiro.
+
+Exemplos:
+
+| atual | ideal |
+| -- | -- |
+| est@S | ést@s |
+| mo"2"TI | mó"2"TI |
+| propriÃmẼ"TI | própriAmẼ"TI |
+| pôs | poIS |
+| voSês | voSeis |
+
+* Há alguns casos de nasalização das vogais que não deveriam ocorrer.
+
+Exemplos:
+
+| atual | ideal |
+| -- | -- |
+| prĨmeirU | primeirU |
+| naSĨmẼtU | naSĨmẼtU |
+| KÕmeSa"2 | KomeSa"2 |
