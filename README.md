@@ -6,6 +6,7 @@ Algumas opções de transcrição são da variante carioca do português brasile
 
 * [Exemplo](#exemplo)
 * [Como usar](#como-usar)
+* [Símbolos importantes](#símbolos-importantes)
 * [Regras de transformação](#regras-de-transformação)
 * [Deficiências](#deficiências)
 
@@ -42,6 +43,16 @@ Veja a transcrição fonética do mesmo parágrafo:
 		
 		teStU a se"2 trÃsKritU fÕne"TiKÃmẼ"TI
 
+# Símbolos importantes
+
+| símbolo | som |
+| -- | -- |
+| "T | **t**ia |
+| "D | **d**ia |
+| "2 | **r**ua / ca**rr**o |
+| "1 | nava**lh**a |
+| "3 | ma**nh**ã |
+
 # Regras de transformação
 
 Parte das regras para consoantes foram adaptadas do projeto [Metaphone for Brazilian Portuguese](https://sourceforge.net/p/metaphoneptbr/code/ci/master/tree/README#l56).
@@ -65,7 +76,7 @@ As regras são aplicadas a todas as palavras, na ordem em que aparecem. Consider
 
 Abaixo, você confere algumas das regras de transcrição fonética:
 
-| EXPRESSÃO | RESULTADO |
+| expressão | resultado |
 | -- | -- |
 | W[LRv] | V |
 | [Ã][O]$ | ÃW |
