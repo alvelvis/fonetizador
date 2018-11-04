@@ -47,6 +47,7 @@ Veja a transcrição fonética do mesmo parágrafo:
 
 | símbolo | som |
 | -- | -- |
+| @ | arar**a** |
 | "T | **t**ia |
 | "D | **d**ia |
 | "2 | **r**ua / ca**rr**o |
