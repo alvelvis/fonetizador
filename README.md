@@ -130,11 +130,11 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | E(S?)$ | I |
 | O(S?)$ | U |
 | ([^vSMNRZL])$ | I |
-| ^([^vt]\*)A([c]*[vd][c]*)$ | Ä |
-| ^([^vt]\*)E([c]*[vd][c]*)$ | Ë |
-| ^([^vt]\*)I([c]*[vd][c]*)$ | Ï |
-| ^([^vt]\*)O([c]*[vd][c]*)$ | Ö |
-| ^([^vt]\*)U([c]*[vd][c]*)$ | Ü |
+| ^([^vt]\*)A([c]\*[vd][c]*)$ | Ä |
+| ^([^vt]\*)E([c]\*[vd][c]*)$ | Ë |
+| ^([^vt]\*)I([c]\*[vd][c]*)$ | Ï |
+| ^([^vt]\*)O([c]\*[vd][c]*)$ | Ö |
+| ^([^vt]\*)U([c]\*[vd][c]*)$ | Ü |
 | ^([c]\*)A([c]*)$ | Ä |
 | ^([c]\*)E([c]*)$ | Ë |
 | ^([c]\*)I([c]*)$ | Ï |
