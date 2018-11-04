@@ -82,7 +82,7 @@ A notação é, em grande parte, a mesma das expressões regulares:
 
 ### Regras
 
-As regras são aplicadas a todas as palavras, na ordem em que aparecem. Considera-se *palavra* o conjunto de caracteres entre espaços que não contenha números.
+As regras são aplicadas a todas as palavras, na ordem em que aparecem. Considera-se *palavra* o conjunto de caracteres entre espaços que não contenha números nem pontuação.
 
 Abaixo, você confere as regras de transcrição fonética. Apenas o que não está entre parênteses é efetivamente substituído.
 
