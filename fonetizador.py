@@ -12,7 +12,7 @@ def fonetiza(palavra):
 
 		#VOGAIS E CONSOANTESS
 		v = r'AEIOUÁÉÍÓÚÃẼĨÕŨÀÈÌÒÙÂÊÎÔÛ@'
-		c = r'BCDFGHJKLMNPQRSTVWXYZ"'
+		c = r'BCDFGHJKLMNPQRSTVWXYZ"0123'
 
 		#CRIA A LISTA DAS REGRAS DE FONETIZAÇÃO
 		expressao = list()
