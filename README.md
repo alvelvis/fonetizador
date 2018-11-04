@@ -122,7 +122,7 @@ Abaixo, você confere algumas das regras de transcrição fonética:
 
 # Deficiências
 
-* O **fonetizador** não consegue identificar as sílabas tônicas das palavras e, por isso, algumas transcrições fonéticas não conseguem ser fiéis à fala do português brasileiro:
+* O **fonetizador** não consegue identificar as sílabas tônicas das palavras ou se as vogais são abertas e fechadas nas palavras e, por isso, algumas transcrições fonéticas não conseguem ser fiéis à fala do português brasileiro:
 
 | atual | ideal |
 | -- | -- |
