@@ -114,11 +114,11 @@ Abaixo, você confere algumas das regras de transcrição fonética:
 
 | atual | ideal |
 | -- | -- |
-| est@S | ést@s |
+| est@S | ést@S |
 | mo"2"TI | mó"2"TI |
-| propriÃmẼ"TI | própriAmẼ"TI |
+| propriÃmẼ"TI | própriamẼ"TI |
 | pôs | poIS |
-| voSês | voSeis |
+| voSês | voSeIS |
 
 * Há alguns casos de nasalização das vogais que não deveriam ocorrer:
 
