@@ -41,7 +41,7 @@ Veja a transcrição fonética do mesmo parágrafo:
 
 		>> fonetizador.py -t texto a ser transcrito foneticamente
 		
-		tËxtU Ä sË"2 trÃsKrÏtU fÕne"TiKÃmÊ"TI
+		tËStU Ä sË"2 trÃsKrÏtU fÕne"TiKÃmÊ"TI
 
 # Símbolos importantes
 
@@ -117,29 +117,29 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | ^([^vt]*)IU$ | ÏU |
 | ^([^vt]*)AL$ | ÄL |
 | ^([^vt]*)EL$ | ËL |
-| ^([^vt]*)TU([^vt]*)$ | TÜ |
-| ^([^vt]*)QUI([^vt]*)$ | QÏ |
-| ^([^vt]*)QUE([^vt]*)$ | QË |
-| ^([^vt]*)EI([^vtNM]*)$ | ËI |
-| ^([^vt]*)AI([^vtNM]*)$ | ÄI |
-| ^([^vt]*)UI([^vtNM]*)$ | ÜI |
-| ^([^vt]*)OI([^vtNM]*)$ | ÖI |
-| ^([^vt]*)EU([^vtNM]*)$ | ËU |
-| ^([^vt]*)OU([^vtNM]*)$ | ÖU |
+| ^([^vt]\*)TU([^vt]*)$ | TÜ |
+| ^([^vt]\*)QUI([^vt]*)$ | QÏ |
+| ^([^vt]\*)QUE([^vt]*)$ | QË |
+| ^([^vt]\*)EI([^vtNM]*)$ | ËI |
+| ^([^vt]\*)AI([^vtNM]*)$ | ÄI |
+| ^([^vt]\*)UI([^vtNM]*)$ | ÜI |
+| ^([^vt]\*)OI([^vtNM]*)$ | ÖI |
+| ^([^vt]\*)EU([^vtNM]*)$ | ËU |
+| ^([^vt]\*)OU([^vtNM]*)$ | ÖU |
 | ^([^vt]*)I$ | Ï |
 | E(S?)$ | I |
 | O(S?)$ | U |
 | ([^vSMNRZL])$ | I |
-| ^([^vt]*)A([c]*[vd][c]*)$ | Ä |
-| ^([^vt]*)E([c]*[vd][c]*)$ | Ë |
-| ^([^vt]*)I([c]*[vd][c]*)$ | Ï |
-| ^([^vt]*)O([c]*[vd][c]*)$ | Ö |
-| ^([^vt]*)U([c]*[vd][c]*)$ | Ü |
-| ^([c]*)A([c]*)$ | Ä |
-| ^([c]*)E([c]*)$ | Ë |
-| ^([c]*)I([c]*)$ | Ï |
-| ^([c]*)O([c]*)$ | Ö |
-| ^([c]*)U([c]*)$ | Ü |
+| ^([^vt]\*)A([c]*[vd][c]*)$ | Ä |
+| ^([^vt]\*)E([c]*[vd][c]*)$ | Ë |
+| ^([^vt]\*)I([c]*[vd][c]*)$ | Ï |
+| ^([^vt]\*)O([c]*[vd][c]*)$ | Ö |
+| ^([^vt]\*)U([c]*[vd][c]*)$ | Ü |
+| ^([c]\*)A([c]*)$ | Ä |
+| ^([c]\*)E([c]*)$ | Ë |
+| ^([c]\*)I([c]*)$ | Ï |
+| ^([c]\*)O([c]*)$ | Ö |
+| ^([c]\*)U([c]*)$ | Ü |
 | [Z]$ | S |
 | ([^SWNR])S([v]) | Z |
 | Y | I |
@@ -147,7 +147,7 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | W([c]) | "0 |
 | LH | "3 |
 | NH | "4 |
-| ([AEIOÄËÏÖ])[L]([^v]) | U |
+| ([AEIOÄËÏÖ])\[L]([^v]) | U |
 | ([AEIOÄËÏÖ])[L]$ | U |
 | A(([MN]|"4)[v]) | Ã |
 | E(([MN]|"4)[v]) | Ẽ |
@@ -159,16 +159,16 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | Ï(([MN]|"4)[v]) | Î |
 | Ö(([MN]|"4)[v]) | Ô |
 | Ü(([MN]|"4)[v]) | Û |
-| A[MN]([^v]) | Ã |
-| E[MN]([^v]) | Ẽ |
-| I[MN]([^v]) | Ĩ |
-| O[MN]([^v]) | Õ |
-| U[MN]([^v]) | Ũ |
-| Ä[MN]([^v]) | Â |
-| Ë[MN]([^v]) | Ê |
-| Ï[MN]([^v]) | Î |
-| Ö[MN]([^v]) | Ô |
-| Ü[MN]([^v]) | Û |
+| A\[MN]([^v]) | Ã |
+| E\[MN]([^v]) | Ẽ |
+| I\[MN]([^v]) | Ĩ |
+| O\[MN]([^v]) | Õ |
+| U\[MN]([^v]) | Ũ |
+| Ä\[MN]([^v]) | Â |
+| Ë\[MN]([^v]) | Ê |
+| Ï\[MN]([^v]) | Î |
+| Ö\[MN]([^v]) | Ô |
+| Ü\[MN]([^v]) | Û |
 | A[MN]$ | ÃU |
 | E[MN]$ | ẼI |
 | I[MN]$ | Ĩ |
@@ -179,8 +179,8 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | Ï[MN]$ | Î |
 | Ö[MN]$ | ÔU |
 | Ü[MN]$ | Û |
-| [T]([IÏĨÎ]) | "T |
-| [D]([IÏĨÎ]) | "D |
+| \[T]([IÏĨÎ]) | "T |
+| \[D]([IÏĨÎ]) | "D |
 | Ç | S |
 | SS | S |
 | SH | X |
@@ -188,11 +188,11 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | SC([AUOÃŨÕÂÛÔÄÜÖ]) | SK |
 | SCH | X |
 | TH | T |
-| (E)X([PTC]) | S |
-| ^(E)X([v]) | Z |
-| (E)X([AOUÄÖÜÂÔÛÃÕŨ]) | KS								 |
-| (E)X([^EIAOUÃẼĨÕŨÄËÏÖÜÂÊÎÔÛ]) | KS |
-| ([DFMNPQSTVZ][AIOUÂIÔÛÃĨÕŨÄÏÖÜ])X | KS |
+| ([EÊẼË])X([PTC]) | S |
+| ^([EÊẼË])X([v]) | Z |
+| ([EÊẼË])X([AOUÄÖÜÂÔÛÃÕŨ]) | KS								 |
+| ([EÊẼË])X([^EIAOUÃẼĨÕŨÄËÏÖÜÂÊÎÔÛ]) | KS |
+| (\[DFMNPQSTVZ][AIOUÂIÔÛÃĨÕŨÄÏÖÜ])X | KS |
 | CH(R) | K |
 | CH | X |
 | C([AOUÃÕŨÂÔÛÄÖÜ]) | K |
