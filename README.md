@@ -147,8 +147,8 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | W([c]) | "0 |
 | LH | "3 |
 | NH | "4 |
-| ([AEIOÄËÏÖ])\[L]([^v]) | U |
-| ([AEIOÄËÏÖ])[L]$ | U |
+| ([AEIOÄËÏÖ])L([^v]) | U |
+| ([AEIOÄËÏÖ])L$ | U |
 | A(([MN]|"4)[v]) | Ã |
 | E(([MN]|"4)[v]) | Ẽ |
 | I(([MN]|"4)[v]) | Ĩ |
