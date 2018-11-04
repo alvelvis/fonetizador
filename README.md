@@ -110,9 +110,7 @@ Abaixo, você confere algumas das regras de transcrição fonética:
 
 # Deficiências
 
-* O **fonetizador** não consegue identificar as sílabas tônicas das palavras e, por isso, algumas transcrições fonéticas não conseguem ser fiéis à fala do português brasileiro.
-
-Exemplos:
+* O **fonetizador** não consegue identificar as sílabas tônicas das palavras e, por isso, algumas transcrições fonéticas não conseguem ser fiéis à fala do português brasileiro. Exemplos:
 
 | atual | ideal |
 | -- | -- |
@@ -122,9 +120,7 @@ Exemplos:
 | pôs | poIS |
 | voSês | voSeis |
 
-* Há alguns casos de nasalização das vogais que não deveriam ocorrer.
-
-Exemplos:
+* Há alguns casos de nasalização das vogais que não deveriam ocorrer. Exemplos:
 
 | atual | ideal |
 | -- | -- |
