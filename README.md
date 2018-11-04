@@ -22,7 +22,7 @@ Considere o parágrafo inicial de Memórias Póstumas de Brás Cubas (Machado de
 
 Veja a transcrição fonética do mesmo parágrafo:
 
->AWgŨ tẼpU eZitei sI devi@ abri"2 est@S mẼmóri@S pelU prĨSípIW OW pelU fĨ , istU é , sI pori@ ẼI prĨmeirU luga"2 U mEW naSĨmẼtU OW a mĨ"3@ mo"2"TI . SupostU U uZU vUWga"2 sej@ KÕmeSa"2 pelU naSĨmẼtU , du@S KÕsideraSõIS mI levarÃW a adota"2 "DiferẼ"TI métodU : a prĨmeir@ é KI EW nÃW sOW propriÃmẼ"TI Ũ AWto"2 defŨtU , mas Ũ defŨtU AWto"2 , par@ KẼI a KÃp@ foi OWtrU be"2SU ; a segŨd@ é KI U esKritU fiKari@ aSĨ mais galÃ"TI I mais novU . MoiZés , KI tÃbẼI KÕtOW a su@ mo"2"TI , nÃW a pOIS nU ĨtróitU , mas nU KabU ; "DiferẼS@ "2a"DiKAW ẼtrI es"TI livrU I U PẼtatEWKU .
+>AUgÛ tÊpU eZitËI sÏ devÏA abrÏ"2 Ëstas mẼmÖrias pËlU prĨSÏpiU ÖU pËlU fÎ , ÏstU Ë , sÏ porÏA ÊI prĨmËIrU lugÄ"2 Ü mËU naSĨmÊtU ÖU Ä mÎ"4a mÖ"2"TI . SupÖstU Ü ÜZU vulgÄ"2 sËja KÕmeSÄ"2 pËlU naSĨmÊtU , dÜas KÕsideraSÔIs mÏ levÄrÃU Ä adotÄ"2 "DiferÊ"TI mËtodU : Ä prĨmËIra Ë QË ËU nÂU sÖU propriÃmÊ"TI Û autÖ"2 defÛtU , mÄs Û defÛtU autÖ"2 , pÄra QÊI Ä KÂpa fÖI ÖUtrU bË"2SU ; Ä segÛda Ë QË Ü esKrÏtU fiKarÏA aSÎ mÄIs galÂ"TI Ï mÄIs nÖvU . MoiZËs , QË tÃbÊI KÕtÖU Ä sÜa mÖ"2"TI , nÂU Ä pÖs nÜ ĨtrÖitU , mÄs nÜ KÄbU ; "DiferÊSa "2a"DiKÄU ÊtrI Ës"TI lÏvrU Ï Ü PẼtatËUKU .
 
 # Como usar
 
@@ -41,18 +41,23 @@ Veja a transcrição fonética do mesmo parágrafo:
 
 		>> fonetizador.py -t texto a ser transcrito foneticamente
 		
-		teStU a se"2 trÃsKritU fÕne"TiKÃmẼ"TI
+		tËxtU Ä sË"2 trÃsKrÏtU fÕne"TiKÃmÊ"TI
 
 # Símbolos importantes
 
 | símbolo | som |
 | -- | -- |
-| @ | arar**a** |
+| AEIOU | vogais |
+| ÄËÏÖÜ | vogais tônicas |
+| ÃẼĨÕŨ | vogais nasais |
+| ÂÊÎÔÛ | vogais tônicas e nasais |
 | "T | **t**ia |
 | "D | **d**ia |
-| "2 | **r**ua / ca**rr**o |
-| "1 | nava**lh**a |
-| "3 | ma**nh**ã |
+| d | **d**ado |
+| "2 | ca**rr**o / **r**aro |
+| r | ra**r**o |
+| "3 | nava**lh**a |
+| "4 | ma**nh**ã |
 
 # Regras de transformação
 
@@ -75,67 +80,143 @@ A notação é, em grande parte, a mesma das expressões regulares:
 
 As regras são aplicadas a todas as palavras, na ordem em que aparecem. Considera-se *palavra* o conjunto de caracteres entre espaços que não contenha números.
 
-Abaixo, você confere algumas das regras de transcrição fonética:
+Abaixo, você confere as regras de transcrição fonética. Apenas o que não está entre parênteses é efetivamente substituído.
 
-| expressão | resultado |
-| -- | -- |
-| W[LRv] | V |
-| [Ã][O]$ | ÃW |
-| [AÃÁ][N]$ | Ã |
-| [AÃÁ][M]$ | ÃW |
-| [EẼÉ][M]$ | ẼI |
-| [^SWNR]S[v] | Z |
-| [AÁÂ][L][^vH] | AW |
-| [AÁÂ][U] | AW |
-| [O]$ | U |
-| [E]$ | I |
-| [A]$ | @ |
-| [Z]$ | S |
-| [T][IĨÍ] | "T |
-| [D][IĨÍ] | "D |
-| SS | S |
-| SH | X |
-| SC[EIẼĨÉÍ] | S |
-| SC[AUOÃŨÕÁÚÓ] | SK |
-| SCH | X |
-| TH | T |
-| ^EX[v] | Z |
-| CH | X |
-| C[ÂAÃÔÕOÛŨU] | K |
-| C[c] | K |
-| C[EÊẼIÎĨ] | S |
-| C$ | K |
-| Ç | S |
-| ^H[v] | desaparece |
-| LH | "1 |
-| N$ | M |
-| NH | "3 |
-| PH | F |
-| QU[IEĨẼÍÉÎÊ] | K |
-| QU[AOÃÕÁÓÂÔ] | K |
-| Q | K |
-| GU[IEĨẼÍÉÎÊ] | G |
-| ^R | "2 |
-| R$ | "2 |
-| RR | "2 |
-| R[c] | "2 |
+	('GH?([EIÊÎËÏẼĨ])','J')
+	('[G]U[I]','GI')
+	('[G]U[E]','GE')
+	('Á','Ä')
+	('É','Ë')
+	('Í','Ï')
+	('Ó','Ö')
+	('Ú','Ü')
+	('Â','Ä')
+	('Ê','Ë')
+	('Î','Ï')
+	('Ô','Ö')
+	('Û','Ü')
+	('Ã','Â')
+	('Ẽ','Ê')
+	('Ĩ','Î')
+	('Õ','Ô')
+	('Ũ','Û')
+	('^([^'+vt+']*)AIA$','ÄIA')
+	('^([^'+vt+']*)EIA$','ËIA')
+	('^([^'+vt+']*)AR$','Ä')
+	('^([^'+vt+']*)ER$','Ë')
+	('^([^'+vt+']*)IR$','Ï')
+	('^([^'+vt+']*)OR$','Ö')
+	('^([^'+vt+']*)IM$','ÏM')
+	('^([^'+vt+']*)UM$','ÜM')
+	('^([^'+vt+']*)IA$','ÏA')
+	('^([^'+vt+']*)IU$','ÏU')
+	('^([^'+vt+']*)AL$','ÄL')
+	('^([^'+vt+']*)EL$','ËL')
+	('^([^'+vt+']*)TU([^'+vt+']*)$','TÜ')
+	('^([^'+vt+']*)[Q]U[I]([^'+vt+']*)$','QÏ')
+	('^([^'+vt+']*)[Q]U[E]([^'+vt+']*)$','QË')
+	('^([^'+vt+']*)EI([^'+vt+'NM]*)$','ËI')
+	('^([^'+vt+']*)AI([^'+vt+'NM]*)$','ÄI')
+	('^([^'+vt+']*)UI([^'+vt+'NM]*)$','ÜI')
+	('^([^'+vt+']*)OI([^'+vt+'NM]*)$','ÖI')
+	('^([^'+vt+']*)EU([^'+vt+'NM]*)$','ËU')
+	('^([^'+vt+']*)OU([^'+vt+'NM]*)$','ÖU')
+	('^([^'+vt+']*)I$','Ï')
+	('E(S?)$','I')
+	('O(S?)$','U')
+	('([^'+v+'SMNRZL])$','I')
+	('^([^'+vt+']*)A(['+c+']*['+vd+']['+c+']*)$','Ä')
+	('^([^'+vt+']*)E(['+c+']*['+vd+']['+c+']*)$','Ë')
+	('^([^'+vt+']*)I(['+c+']*['+vd+']['+c+']*)$','Ï')
+	('^([^'+vt+']*)O(['+c+']*['+vd+']['+c+']*)$','Ö')
+	('^([^'+vt+']*)U(['+c+']*['+vd+']['+c+']*)$','Ü')
+	('^(['+c+']*)A(['+c+']*)$','Ä')
+	('^(['+c+']*)E(['+c+']*)$','Ë')
+	('^(['+c+']*)I(['+c+']*)$','Ï')
+	('^(['+c+']*)O(['+c+']*)$','Ö')
+	('^(['+c+']*)U(['+c+']*)$','Ü')
+	('[Z]$','S')
+	('([^SWNR])S(['+v+'])','Z')
+	('Y','I')
+	('W([L'+v+'])','V')
+	('W(['+c+'])','"0')
+	('LH','"3')
+	('NH','"4')
+	('([AEIOÄËÏÖ])[L]([^'+v+'])','U')
+	('([AEIOÄËÏÖ])[L]$','U')
+	('A(([MN]|"4)['+v+'])','Ã')
+	('E(([MN]|"4)['+v+'])','Ẽ')
+	('I(([MN]|"4)['+v+'])','Ĩ')
+	('O(([MN]|"4)['+v+'])','Õ')
+	('U(([MN]|"4)['+v+'])','Ũ')
+	('Ä(([MN]|"4)['+v+'])','Â')
+	('Ë(([MN]|"4)['+v+'])','Ê')
+	('Ï(([MN]|"4)['+v+'])','Î')
+	('Ö(([MN]|"4)['+v+'])','Ô')
+	('Ü(([MN]|"4)['+v+'])','Û')
+	('A[MN]([^'+v+'])','Ã')
+	('E[MN]([^'+v+'])','Ẽ')
+	('I[MN]([^'+v+'])','Ĩ')
+	('O[MN]([^'+v+'])','Õ')
+	('U[MN]([^'+v+'])','Ũ')
+	('Ä[MN]([^'+v+'])','Â')
+	('Ë[MN]([^'+v+'])','Ê')
+	('Ï[MN]([^'+v+'])','Î')
+	('Ö[MN]([^'+v+'])','Ô')
+	('Ü[MN]([^'+v+'])','Û')
+	('A[MN]$','ÃU')
+	('E[MN]$','ẼI')
+	('I[MN]$','Ĩ')
+	('O[MN]$','ÕU')
+	('U[MN]$','Ũ')
+	('Ä[MN]$','ÂU')
+	('Ë[MN]$','ÊI')
+	('Ï[MN]$','Î')
+	('Ö[MN]$','ÔU')
+	('Ü[MN]$','Û')
+	('[T]([IÏĨÎ])','"T')
+	('[D]([IÏĨÎ])','"D')
+	('Ç','S')
+	('SS','S')
+	('SH','X')
+	('SC([EIËÏẼĨÊÎ])','S')
+	('SC([AUOÃŨÕÂÛÔÄÜÖ])','SK')
+	('SCH','X')
+	('TH','T')
+	('(E)X([PTC])','S')
+	('^(E)X(['+v+'])','Z')
+	('(E)X([AOUÄÖÜÂÔÛÃÕŨ])','KS')								
+	('(E)X([^EIAOUÃẼĨÕŨÄËÏÖÜÂÊÎÔÛ])','KS')
+	('([DFMNPQSTVZ][AIOUÂIÔÛÃĨÕŨÄÏÖÜ])X','KS')
+	('CH(R)','K')
+	('CH','X')
+	('C([AOUÃÕŨÂÔÛÄÖÜ])','K')
+	('C(['+c+'])','K')
+	('C([EIÊÎËÏẼĨ])','S')
+	('C$','K')
+	('^H(['+v+'])','')
+	('^','"2')
+	('R$','"2')
+	('R','"2')
+	('R(['+c+'])','"2')
+	('TÄKSA','TÄXA')
+	('TAKSA','TAXA')
+	('mÄKSĨ','mÄXĨ')
+	('maKSĨ','maXĨ')
 
 # Deficiências
 
-* O **fonetizador** não consegue identificar as sílabas tônicas das palavras ou se as vogais são abertas ou fechadas e, por isso, algumas transcrições fonéticas não conseguem ser fiéis à fala do português brasileiro:
+* O **fonetizador** não consegue identificar se as vogais *E* e *I* são abertas ou fechadas e, por isso, algumas transcrições fonéticas não conseguem ser fiéis à fala do português brasileiro:
 
-| atual | ideal |
+| fechada | aberta |
 | -- | -- |
-| est@S | ést@S |
-| mo"2"TI | mó"2"TI |
-| propriÃmẼ"TI | própriamẼ"TI |
-| pôs | poIS |
-| voSês | voSeIS |
+| m**Ö**"2tU / m**o**"2"TÎ"4U | m**Ö**"2"TI |
+| pr**o**priedÄ"DI | pr**Ö**pria / pr**o**priÃmÊ"TI |
 
 * Há alguns casos de nasalização das vogais que não deveriam ocorrer:
 
 | atual | ideal |
 | -- | -- |
-| prĨmeirU | primeirU |
-| naSĨmẼtU | naSimẼtU |
-| KÕmeSa"2 | KomeSa"2 |
+| pr**Ĩ**mËIrU | pr**I**mËIrU |
+| naS**Ĩ**mÊtU | naS**I**mÊtU |
+| K**Õ**meSÄ"2 | K**O**meSÄ"2 |
