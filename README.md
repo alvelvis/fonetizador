@@ -78,6 +78,7 @@ A notação é, em grande parte, a mesma das expressões regulares:
 	*	--> 0 ou mais
 	+	--> 1 ou mais
 	?	--> 1 ou 0
+	|	--> ou
 
 ### Regras
 
