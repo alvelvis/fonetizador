@@ -200,7 +200,7 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | C([c]) | K |
 | C([EIÊÎËÏẼĨ]) | S |
 | C$ | K |
-| ^H([v]) |  |
+| ^H([v]) | desaparece |
 | ^ | "2 |
 | R$ | "2 |
 | R | "2 |
