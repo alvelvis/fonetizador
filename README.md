@@ -52,8 +52,8 @@ Veja a transcrição fonética do mesmo parágrafo:
 | ÃẼĨÕŨ | vogais nasais |
 | ÂÊÎÔÛ | vogais tônicas e nasais |
 | "T | **t**ia |
-| "D | **d**ia |
-| d | **d**ado |
+| "D | **d**ia / **d**iadema |
+| d | **d**ança / dia**d**ema |
 | "2 | ca**rr**o / **r**aro |
 | r | tesou**r**o / ra**r**o |
 | "3 | nava**lh**a |
