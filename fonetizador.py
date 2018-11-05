@@ -96,7 +96,7 @@ def fonetiza(palavra):
 								(r'^([^'+vt+']*)U(S?)$','Ü',1,2),
 
 								#CONSOANTES MUDAS
-								(r'([^'+v+'SMNRZLCHT])([^'+v+'])','I',1,2),
+								(r'([^'+v+'SMNRZLCHT])([^'+v+'H])','I',1,2),
 								(r'([^'+v+'SMNRZLCHT])$','I',1,0),
 
 								#S E Z
