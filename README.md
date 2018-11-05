@@ -51,11 +51,12 @@ Veja a transcrição fonética do mesmo parágrafo:
 | ÃẼĨÕŨ | vogais átonas e nasais |
 | ÄËÏÖÜ | vogais tônicas e orais |
 | ÂÊÎÔÛ | vogais tônicas e nasais |
-| "T | **t**ia |
-| "D | **d**ia / **d**iadema |
+| t | **t**ouro / **T**atiana |
+| "T | **t**ia / Ta**t**iana  |
 | d | **d**ança / dia**d**ema |
-| "2 | ca**rr**o / **r**aro |
+| "D | **d**ia / **d**iadema |
 | r | tesou**r**o / ra**r**o |
+| "2 | ca**rr**o / **r**aro |
 | "3 | nava**lh**a |
 | "4 | ma**nh**ã |
 
