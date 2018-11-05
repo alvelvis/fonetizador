@@ -150,8 +150,7 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | Z$ | S		 |
 | ([^SWNR])S([v]) | Z |
 | Y | I |
-| W([LRv]) | V |
-| W([c]) | "0 |
+| W([v]) | V |
 | ([^vSMNRZL])$ | I |
 | X(I?)$ | KS |
 | E(S?)$ | I |

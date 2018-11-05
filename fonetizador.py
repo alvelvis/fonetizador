@@ -103,8 +103,7 @@ def fonetiza(palavra):
 								(r'Z$','S',0,0),		
 								(r'([^SWNR])S(['+v+'])','Z',1,2),
 								(r'Y','I',0,0),
-								(r'W([LR'+v+'])','V',0,1),
-								(r'W(['+c+'])','"0',0,1),
+								(r'W(['+v+'])','V',0,1),
 
 								#FINAL DAS PALAVRAS								
 								(r'X(I?)$','KS',0,1),
