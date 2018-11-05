@@ -48,6 +48,7 @@ def fonetiza(palavra):
 								(r'Ĩ','Î',0,0),
 								(r'Õ','Ô',0,0),
 								(r'Ũ','Û',0,0),
+								(r'À','A',0,0),
 
 								#TÔNICAS ESPECIAIS
 								(r'^([^'+vt+']*)AIA(S?)$','ÄIA',1,2),

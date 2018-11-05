@@ -106,6 +106,7 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | Ĩ | Î |
 | Õ | Ô |
 | Ũ | Û |
+| À | A |
 | ^([^vt]*)AIA(S?)$ | ÄIA |
 | ^([^vt]*)EIA(S?)$ | ËIA |
 | ^([^vt]*)OIA(S?)$ | ÖIA |
