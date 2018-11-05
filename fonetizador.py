@@ -26,7 +26,6 @@ def fonetiza(palavra):
 		#ADICIONA AS REGRAS DE FONETIZAÇÃO
 		#('expressão regular','substituto',grupo anterior que permanece,grupo posterior que permanece)
 		expressao.extend([
-
 								#TIRAR O "U" DO "GUE"
 								(r'GH?([EIÊÎËÏẼĨ])','J',0,1),
 								(r'GUI','GI',0,0),
@@ -96,6 +95,10 @@ def fonetiza(palavra):
 								(r'^([^'+vt+']*)I(S?)$','Ï',1,2),
 								(r'^([^'+vt+']*)U(S?)$','Ü',1,2),
 
+								#CONSOANTES MUDAS
+								(r'([^'+v+'SMNRZL])([^'+v+'])','I',1,2),
+								(r'([^'+v+'SMNRZL])$','I',1,0),
+
 								#S E Z
 								(r'Z$','S',0,0),		
 								(r'([^SWNR])S(['+v+'])','Z',1,2),
@@ -103,8 +106,7 @@ def fonetiza(palavra):
 								(r'W([LR'+v+'])','V',0,1),
 								(r'W(['+c+'])','"0',0,1),
 
-								#FINAL DAS PALAVRAS
-								(r'([^'+v+'SMNRZL])$','I',1,0),
+								#FINAL DAS PALAVRAS								
 								(r'X(I?)$','KS',0,1),
 								(r'E(S?)$','I',0,1),
 								(r'O(S?)$','U',0,1),
