@@ -22,7 +22,7 @@ Considere o parágrafo inicial de Memórias Póstumas de Brás Cubas (Machado de
 
 Veja a transcrição fonética do mesmo parágrafo:
 
->AUgÛ tÊpU eZitËI sÏ devÏA abrÏ"2 Ëstas mẼmÖrias pËlU prĨSÏpiU ÖU pËlU fÎ , ÏstU Ë , sÏ porÏA ÊI prĨmËIrU lugÄ"2 Ü mËU naSĨmÊtU ÖU Ä mÎ"4a mÖ"2"TI . SupÖstU Ü ÜZU vulgÄ"2 sËja KÕmeSÄ"2 pËlU naSĨmÊtU , dÜas KÕsideraSÔIs mÏ levÄrÃU Ä adotÄ"2 "DiferÊ"TI mËtodU : Ä prĨmËIra Ë QË ËU nÂU sÖU propriÃmÊ"TI Û autÖ"2 defÛtU , mÄs Û defÛtU autÖ"2 , pÄra QÊI Ä KÂpa fÖI ÖUtrU bË"2SU ; Ä segÛda Ë QË Ü esKrÏtU fiKarÏA aSÎ mÄIs galÂ"TI Ï mÄIs nÖvU . MoiZËs , QË tÃbÊI KÕtÖU Ä sÜa mÖ"2"TI , nÂU Ä pÖs nÜ ĨtrÖitU , mÄs nÜ KÄbU ; "DiferÊSa "2a"DiKÄU ÊtrI Ës"TI lÏvrU Ï Ü PẼtatËUKU .
+>AUgÛ tÊpU eZitËI sÏ devÏa abrÏ"2 Ëstas mẼmÖrias pËlU prĨSÏpiU ÖU pËlU fÎ , ÏstU Ë , sÏ porÏa ÊI prĨmËIrU lugÄ"2 Ü mËU naSĨmÊtU ÖU Ä mÎ"4a mÖ"2"TI . SupÖstU Ü ÜZU vulgÄ"2 sËja KÕmeSÄ"2 pËlU naSĨmÊtU , dÜas KÕsideraSÔIs mÏ levÄrÃU Ä adotÄ"2 "DiferÊ"TI mËtodU : Ä prĨmËIra Ë QË ËU nÂU sÖU propriÃmÊ"TI Û autÖ"2 defÛtU , mÄs Û defÛtU autÖ"2 , pÄra QÊI Ä KÂpa fÖI ÖUtrU bË"2SU ; Ä segÛda Ë QË Ü esKrÏtU fiKarÏa aSÎ mÄIs galÂ"TI Ï mÄIs nÖvU . MoiZËIS , QË tÃbÊI KÕtÖU Ä sÜa mÖ"2"TI , nÂU Ä pÖIS nÜ ĨtrÖitU , mÄs nÜ KÄbU ; "DiferÊSa "2a"DiKÄU ÊtrI Ës"TI lÏvrU Ï Ü PẼtatËUKU .
 
 # Como usar
 
