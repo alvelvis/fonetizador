@@ -106,6 +106,8 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | Ĩ | Î |
 | Õ | Ô |
 | Ũ | Û |
+| ^([^vt]*)ECO$ | ËCO |
+| ^([^vt]*)ADO$ | ÄDO |
 | ^([^vt]*)AIA$ | ÄIA |
 | ^([^vt]*)EIA$ | ËIA |
 | ^([^vt]*)OIA$ | ÖIA |
@@ -138,6 +140,7 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | ^([^vt]\*)EU([^vtNM]*)$ | ËU |
 | ^([^vt]\*)OU([^vtNM]*)$ | ÖU |
 | ^([^vt]*)I$ | Ï |
+| ^([^vt]*)U$ | Ü |
 | E(S?)$ | I |
 | O(S?)$ | U |
 | ([^vSMNRZL])$ | I |
