@@ -130,7 +130,6 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | ^([^vt]*)IZ$ | ÏZ |
 | ^([^vt]*)OZ$ | ÖZ |
 | ^([^vt]*)UZ$ | ÜZ |
-| ^([^vt]\*)TU([^vt]*)$ | TÜ |
 | ^([^vt]\*)QUI([^vt]*)$ | QÏ |
 | ^([^vt]\*)QUE([^vt]*)$ | QË |
 | ^([^vt]\*)EI([^vtNM]*)$ | ËI |
