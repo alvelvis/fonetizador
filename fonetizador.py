@@ -129,11 +129,11 @@ def fonetiza(palavra):
 								(r'LH','"3',0,0),
 								(r'NH','"4',0,0),
 
-								#GLIDE
+								#DITONGOS
 								(r'([AEIOÄËÏÖ])L([^'+v+'])','U',1,2),
 								(r'([AEIOÄËÏÖ])L$','U',1,0),	
 
-								#NASALIZAÇÃO DOS ÁTONOS							
+								#NASALIZAÇÃO DOS ÁTONOS (e algumas ditongações)				
 								(r'A(([MN]|"4)['+v+'])','Ã',0,1),
 								(r'E(([MN]|"4)['+v+'])','Ẽ',0,1),
 								(r'I(([MN]|"4)['+v+'])','Ĩ',0,1),
@@ -150,7 +150,7 @@ def fonetiza(palavra):
 								(r'O[MN]$','ÕU',0,0),
 								(r'U[MN]$','Ũ',0,0),
 								
-								#NASALIZAÇÃO DOS TÔNICOS
+								#NASALIZAÇÃO DOS TÔNICOS (e algumas ditongações)
 								(r'Ä(([MN]|"4)['+v+'])','Â',0,1),
 								(r'Ë(([MN]|"4)['+v+'])','Ê',0,1),
 								(r'Ï(([MN]|"4)['+v+'])','Î',0,1),
