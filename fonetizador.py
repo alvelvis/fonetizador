@@ -8,11 +8,11 @@ def fonetiza(palavra):
 
 	#CHECA SE A PALAVRA NÃO CONTÉM NÚMEROS NEM ESPAÇOS
 	#CASO CONTRÁRIO, NÃO MODIFICA A PALAVRA (retorna ela própria)
-	notword = r'\d\s'
+	notword = '\d'
 	for item in string.punctuation:
 		notword = notword + '\\' + item
 
-	if re.match(r'[^'+notword+']+', palavra):
+	if re.match(r'^[^'+notword+']+$', palavra) and palavra.strip() != '':
 
 		#VOGAIS E CONSOANTESS
 		vt = r'ÄËÏÖÜÂÊÎÔÛ'
@@ -50,7 +50,7 @@ def fonetiza(palavra):
 								(r'Õ','Ô',0,0),
 								(r'Ũ','Û',0,0),
 
-								#ÁTONO ORAL
+								#ÁTONA ORAL
 								(r'À','A',0,0),
 
 								#TÔNICAS ESPECIAIS
@@ -96,8 +96,8 @@ def fonetiza(palavra):
 								(r'^([^'+vt+']*)U(S?)$','Ü',1,2),
 
 								#CONSOANTES MUDAS
-								(r'([^'+v+'SMNRZLCHT])([^'+v+'H])','I',1,2),
-								(r'([^'+v+'SMNRZLCHT])$','I',1,0),
+								(r'([^'+v+'SXMNRZLCHT])([^'+v+'HRL])','I',1,2),
+								(r'([^'+v+'SXMNRZLCHT])$','I',1,0),
 
 								#S E Z
 								(r'Z$','S',0,0),		
@@ -119,7 +119,7 @@ def fonetiza(palavra):
 								(r'^([^'+vt+']*)O(['+c+']*['+vd+']['+c+']*)$','Ö',1,2),
 								(r'^([^'+vt+']*)U(['+c+']*['+vd+']['+c+']*)$','Ü',1,2),
 
-								#UMA VOGAL APENAS, É TÔNICA
+								#MONOSSÍLABA, É TÔNICA
 								(r'^(['+c+']*)A(['+c+']*)$','Ä',1,2),
 								(r'^(['+c+']*)E(['+c+']*)$','Ë',1,2),
 								(r'^(['+c+']*)I(['+c+']*)$','Ï',1,2),
@@ -132,7 +132,9 @@ def fonetiza(palavra):
 
 								#DITONGOS
 								(r'([AEIOÄËÏÖ])L([^'+v+'])','U',1,2),
-								(r'([AEIOÄËÏÖ])L$','U',1,0),	
+								(r'([AEIOÄËÏÖ])L$','U',1,0),
+								(r'([UÜ])L([^'+v+'])','',1,2),
+								(r'([UÜ])L$','',1,0),	
 
 								#NASALIZAÇÃO DOS ÁTONOS (e algumas ditongações)				
 								(r'A(([MN]|"4)['+v+'])','Ã',0,1),
@@ -186,7 +188,7 @@ def fonetiza(palavra):
 								(r'^([EÊẼË])X(['+v+'])','Z',1,2),
 								(r'([EÊẼË])X([AOUÄÖÜÂÔÛÃÕŨ])','KS',1,2),								
 								(r'([EÊẼË])X([^'+v+'])','KS',1,2),
-								(r'([DFMNPQSTVZ]['+v+'])X','KS',1,0),
+								(r'([DFMNQSTVZ]['+v+'])X','KS',1,0),
 								
 								#K, X, H
 								(r'CH(R)','K',0,0),
@@ -208,7 +210,7 @@ def fonetiza(palavra):
 								(r'TAKSA','TAXA',0,0),
 								(r'mÄKSĨ','mÄXĨ',0,0),
 								(r'maKSĨ','maXĨ',0,0),
-
+								(r'trÖUxI','trÖUSI',0,0),
 						])
 
 
