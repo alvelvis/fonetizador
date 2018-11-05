@@ -213,7 +213,7 @@ Abaixo, você confere as regras de transcrição fonética. Apenas o que não es
 | ([EÊẼË])X([PTC]) | S |
 | ^([EÊẼË])X([v]) | Z |
 | ([EÊẼË])X([AOUÄÖÜÂÔÛÃÕŨ]) | KS								 |
-| ([EÊẼË])X([^EIAOUÃẼĨÕŨÄËÏÖÜÂÊÎÔÛ]) | KS |
+| ([EÊẼË])X([^v]) | KS |
 | (\[DFMNPQSTVZ][v])X | KS |
 | CH(R) | K |
 | CH | X |
