@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import re
-import string
 import sys
+import string
 
 def fonetiza(palavra):
 
@@ -40,7 +40,7 @@ def fonetiza(palavra):
 								(r'Â','Ä',0,0),
 								(r'Ê','Ë',0,0),
 								(r'Î','Ï',0,0),
-								(r'Ô','Ö',0,0),		
+								(r'Ô','Ö',0,0),
 								(r'Û','Ü',0,0),
 
 								#TÔNICAS NASAIS
@@ -50,7 +50,7 @@ def fonetiza(palavra):
 								(r'Õ','Ô',0,0),
 								(r'Ũ','Û',0,0),
 
-								#ÁTONA ORAL
+								#ÁTONO ORAL
 								(r'À','A',0,0),
 
 								#TÔNICAS ESPECIAIS
@@ -96,8 +96,10 @@ def fonetiza(palavra):
 								(r'^([^'+vt+']*)U(S?)$','Ü',1,2),
 
 								#CONSOANTES MUDAS
-								(r'([^'+v+'SXMNRZLCHT])([^'+v+'HRL])','I',1,2),
-								(r'([^'+v+'SXMNRZLCHT])$','I',1,0),
+								(r'([^'+v+'SXMNZLHR])([^'+v+'HRL])','I',1,2),
+								(r'^([^'+v+'SXMNZLHR])([^'+v+'HRL])','I',1,2),
+								(r'([^'+v+'SXMNZLHR])$','I',1,0),
+								(r'([^'+v+'][^'+v+'SXMNZLH])$','I',1,0),
 
 								#S E Z
 								(r'Z$','S',0,0),		
@@ -134,7 +136,7 @@ def fonetiza(palavra):
 								(r'([AEIOÄËÏÖ])L([^'+v+'])','U',1,2),
 								(r'([AEIOÄËÏÖ])L$','U',1,0),
 								(r'([UÜ])L([^'+v+'])','',1,2),
-								(r'([UÜ])L$','',1,0),	
+								(r'([UÜ])L$','',1,0),
 
 								#NASALIZAÇÃO DOS ÁTONOS (e algumas ditongações)				
 								(r'A(([MN]|"4)['+v+'])','Ã',0,1),
@@ -171,7 +173,7 @@ def fonetiza(palavra):
 								(r'Ü[MN]$','Û',0,0),
 
 								#TIA, DIA
-								(r'[T]H?([IÏĨÎ])','"T',0,1),
+								(r'[T]([IÏĨÎ])','"T',0,1),
 								(r'[D]([IÏĨÎ])','"D',0,1),
 								
 								#S, SK
@@ -186,7 +188,6 @@ def fonetiza(palavra):
 								(r'TH','T',0,0),
 								(r'([EÊẼË])X([PTC])','S',1,2),
 								(r'^([EË])X(['+v+'])','Z',1,2),
-								(r'([EË])X([AOUÄÖÜÂÔÛÃÕŨ])','KS',1,2),								
 								(r'([EÊẼË])X([^'+v+'])','KS',1,2),
 								(r'([DFMNQSTVZ]['+v+'])X','KS',1,0),
 								
@@ -206,13 +207,15 @@ def fonetiza(palavra):
 								(r'R(['+c+'])','"2',0,1),
 
 								#CORREÇÃO
-								(r'TÄKSA','TÄXA',0,0),
-								(r'TAKSA','TAXA',0,0),
-								(r'mÄKSĨ','mÄXĨ',0,0),
-								(r'maKSĨ','maXĨ',0,0),
-								(r'trÖUxI','trÖUSI',0,0),
+								(r'(T[AÄ])KS(A)','X',1,2),
+								(r'(m[aÄ])KS([ĨI])','maXĨ',1,2),
+								(r'(tr[ÖO]U)x([IËE])','S',1,2),
+
 						])
 
+		#TESTE DE REGRA
+		TESTAR = False
+		word = "trazer"
 
 		#PASSA POR TODAS AS REGRAS DE TRANSFORMAÇÃO
 		#PARA CADA REGRA, TRANSFORMA A VARIÁVEL "PALAVRA"
@@ -221,6 +224,9 @@ def fonetiza(palavra):
 			
 			match = re.search(expressao[k][0], palavra, flags=re.IGNORECASE)
 			if match:
+
+				if (TESTAR == True) and (palavra == word or palavra == palavra):
+					print(palavra, ': ', expressao[k][0], ' --> ', expressao[k][1])
 				
 				#GRUPOS QUE NÃO SERÃO SUBSTITUÍDOS
 				antes = str(expressao[k][2])
@@ -247,14 +253,14 @@ def main(caminho, output='fonetizado.txt', CODE='utf8', CODEFINAL='utf8'):
 	#SE FOR INTERNO, O TEXTO ESTÁ NA VARIÁVEL OUTPUT
 	#CASO CONTRÁRIO, CARREGAR O ARQUIVO E SEPARAR LINHAS EM LISTAS
 	if caminho != 'interno':
-		texto = open(caminho, 'r', encoding=CODE).read().splitlines()
+		texto = open(caminho, 'r', encoding=CODE).read().replace(';',' ; ').splitlines()
 	else:
 		texto = output.splitlines()
 
 	#DESTACA A PONTUAÇÃO E SEPARA AS PALAVRAS (critério: espaço)
 	for i in range(len(texto)):
-		for ponto in string.punctuation:
-			texto[i] = texto[i].replace(ponto, ' ' + ponto + ' ')
+		#for ponto in string.punctuation:
+			#texto[i] = texto[i].replace(ponto, ' ' + ponto + ' ')
 		texto[i] = texto[i].split()
 
 	#FONETIZA PALAVRA POR PALAVRA
@@ -269,7 +275,7 @@ def main(caminho, output='fonetizado.txt', CODE='utf8', CODEFINAL='utf8'):
 	#SE FOR INTERNO, PRINTA
 	#SE NÃO, SALVA ARQUIVO OUTPUT
 	if caminho != 'interno':
-		open(output, 'w', encoding=CODEFINAL).write("\n".join(texto))
+		open(output, 'w', encoding=CODEFINAL).write("\n".join(texto).replace(' ; ',';'))
 	else:
 		print("\n".join(texto))
 
