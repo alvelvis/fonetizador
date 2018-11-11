@@ -307,15 +307,15 @@ if __name__ == '__main__':
 		print('Argumentos esperados para o fonetizador')
 		print('uso: fonetizador.py entrada saída codificação-da-entrada codificação-da-saída')
 		print("Com o comando `-t' é possível digitar o texto diretamente")
-		print("Tente `-h' para mais informações")
-		print("Para atualizar o fonetizador, `-u'")
+		print("Tente `-help' para mais informações")
+		print("Para atualizar o fonetizador, `-update'")
 	else:
-		if sys.argv[1] == '-h':
+		if sys.argv[1] == '-help':
 			print('uso: fonetizador.py entrada saída codificação-da-entrada codificação-da-saída')
 			print("É obrigatório informar a entrada (arquivo de texto original) OU o texto que será transcrito, após o comando `-t'")
 			print('Saída padrão: "fonetizado.txt"')
 			print('Codificação padrão: utf8')
-		elif sys.argv[1] == '-u': atualizar()
+		elif sys.argv[1] == '-update': atualizar()
 		elif sys.argv[1] == '-t': main('interno', " ".join(sys.argv[2:]))
 		elif len(sys.argv) == 2: main(sys.argv[1])
 		elif len(sys.argv) == 3: main(sys.argv[1], sys.argv[2])
@@ -323,4 +323,4 @@ if __name__ == '__main__':
 		elif len(sys.argv) == 5: main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4])
 		else:
 			print('Argumentos demais')
-			print("Tente `-h' para mais informações")
+			print("Tente `-help' para mais informações")
