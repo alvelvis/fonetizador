@@ -4,7 +4,7 @@ O **fonetizador** transcreve arquivos de texto para uma representação semi-fie
 
 Algumas opções de transcrição são da variante carioca do português brasileiro; outras, da fonologia da língua portuguesa.
 
-Para atualizar a versão do **fonetizador**, utilize o parâmetro *-u* .
+Para atualizar a versão do **fonetizador**, utilize o parâmetro *-update* .
 
 * [Exemplo](#exemplo)
 * [Como usar](#como-usar)
