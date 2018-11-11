@@ -3,6 +3,26 @@
 import re
 import sys
 import string
+import os
+
+#Atualizar a versão do fonetizador
+def atualizar():
+	try:
+		from git import Git
+	except:
+		from pip import main as pipmain
+		pipmain(['install','GitPython'])
+		from git import Git
+	finally:
+		if os.path.isdir('.git'):
+			Git().pull()
+		else:
+			Git().init()
+			Git().remote('add','origin','https://github.com/alvelvis/fonetizador.git')
+			Git().fetch()
+			Git().checkout('master')
+		print('fonetizador atualizado com sucesso!')
+		exit()
 
 def fonetiza(palavra):
 
@@ -288,12 +308,14 @@ if __name__ == '__main__':
 		print('uso: fonetizador.py entrada saída codificação-da-entrada codificação-da-saída')
 		print("Com o comando `-t' é possível digitar o texto diretamente")
 		print("Tente `-h' para mais informações")
+		print("Para atualizar o fonetizador, `-u'")
 	else:
 		if sys.argv[1] == '-h':
 			print('uso: fonetizador.py entrada saída codificação-da-entrada codificação-da-saída')
 			print("É obrigatório informar a entrada (arquivo de texto original) OU o texto que será transcrito, após o comando `-t'")
 			print('Saída padrão: "fonetizado.txt"')
 			print('Codificação padrão: utf8')
+		elif sys.argv[1] == '-u': atualizar()
 		elif sys.argv[1] == '-t': main('interno', " ".join(sys.argv[2:]))
 		elif len(sys.argv) == 2: main(sys.argv[1])
 		elif len(sys.argv) == 3: main(sys.argv[1], sys.argv[2])

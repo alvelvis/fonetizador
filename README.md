@@ -4,6 +4,8 @@ O **fonetizador** transcreve arquivos de texto para uma representação semi-fie
 
 Algumas opções de transcrição são da variante carioca do português brasileiro; outras, da fonologia da língua portuguesa.
 
+Para atualizar a versão do **fonetizador**, utilize o parâmetro *-u* .
+
 * [Exemplo](#exemplo)
 * [Como usar](#como-usar)
 * [Símbolos importantes](#símbolos-importantes)
