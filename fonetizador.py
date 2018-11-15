@@ -12,8 +12,9 @@ def atualizar():
 	except:
 		from pip import main as pipmain
 		pipmain(['install','GitPython'])
-		from git import Git
-	finally:
+		print('GitPython instalado com sucesso!')
+		exit()
+	else:
 		if os.path.isdir('.git'):
 			Git().pull()
 		else:
