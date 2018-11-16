@@ -21,6 +21,8 @@ def atualizar():
 			Git().init()
 			Git().remote('add','origin','https://github.com/alvelvis/fonetizador.git')
 			Git().fetch()
+			if os.path.isfile('README.md'): os.remove('README.md')
+			if os.path.isfile('fonetizador.py'): os.remove('fonetizador.py')
 			Git().checkout('master')
 		print('fonetizador atualizado com sucesso!')
 		exit()
