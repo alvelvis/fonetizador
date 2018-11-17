@@ -125,12 +125,12 @@ def fonetiza(palavra):
 								(r'([^'+v+'][^'+v+'SXMNZLH])$','I',1,0),
 
 								#S E Z
-								(r'Z$','S',0,0),		
+								(r'Z$','S',0,0),
 								(r'([^SWNR])S(['+v+'])','Z',1,2),
 								(r'Y','I',0,0),
 								(r'W(['+v+'])','V',0,1),
 
-								#FINAL DAS PALAVRAS								
+								#FINAL DAS PALAVRAS
 								(r'X(I?)$','KS',0,1),
 								(r'E(S?)$','I',0,1),
 								(r'O(S?)$','U',0,1),
@@ -161,7 +161,7 @@ def fonetiza(palavra):
 								(r'([UÜ])L([^'+v+'])','',1,2),
 								(r'([UÜ])L$','',1,0),
 
-								#NASALIZAÇÃO DOS ÁTONOS (e algumas ditongações)				
+								#NASALIZAÇÃO DOS ÁTONOS (e algumas ditongações)
 								(r'A(([MN]|"4)['+v+'])','Ã',0,1),
 								(r'E(([MN]|"4)['+v+'])','Ẽ',0,1),
 								(r'I(([MN]|"4)['+v+'])','Ĩ',0,1),
@@ -177,7 +177,7 @@ def fonetiza(palavra):
 								(r'I[MN]$','Ĩ',0,0),
 								(r'O[MN]$','ÕU',0,0),
 								(r'U[MN]$','Ũ',0,0),
-								
+
 								#NASALIZAÇÃO DOS TÔNICOS (e algumas ditongações)
 								(r'Ä(([MN]|"4)['+v+'])','Â',0,1),
 								(r'Ë(([MN]|"4)['+v+'])','Ê',0,1),
@@ -188,7 +188,7 @@ def fonetiza(palavra):
 								(r'Ë[MN]([^'+v+'])','Ê',0,1),
 								(r'Ï[MN]([^'+v+'])','Î',0,1),
 								(r'Ö[MN]([^'+v+'])','Ô',0,1),
-								(r'Ü[MN]([^'+v+'])','Û',0,1),								
+								(r'Ü[MN]([^'+v+'])','Û',0,1),
 								(r'Ä[MN]$','ÂU',0,0),
 								(r'Ë[MN]$','ÊI',0,0),
 								(r'Ï[MN]$','Î',0,0),
@@ -198,7 +198,7 @@ def fonetiza(palavra):
 								#TIA, DIA
 								(r'[T]([IÏĨÎ])','"T',0,1),
 								(r'[D]([IÏĨÎ])','"D',0,1),
-								
+
 								#S, SK
 								(r'Ç','S',0,0),
 								(r'SS','S',0,0),
@@ -213,7 +213,7 @@ def fonetiza(palavra):
 								(r'^([EË])X(['+v+'])','Z',1,2),
 								(r'([EÊẼË])X([^'+v+'])','KS',1,2),
 								(r'([DFMNQSTVZ]['+v+'])X','KS',1,0),
-								
+
 								#K, X, H
 								(r'CH(R)','K',0,0),
 								(r'CH','X',0,0),
@@ -244,13 +244,13 @@ def fonetiza(palavra):
 		#PARA CADA REGRA, TRANSFORMA A VARIÁVEL "PALAVRA"
 		k = 0
 		while k < len(expressao):
-			
+
 			match = re.search(expressao[k][0], palavra, flags=re.IGNORECASE)
 			if match:
 
 				if (TESTAR == True) and (palavra == word or palavra == palavra):
 					print(palavra, ': ', expressao[k][0], ' --> ', expressao[k][1])
-				
+
 				#GRUPOS QUE NÃO SERÃO SUBSTITUÍDOS
 				antes = str(expressao[k][2])
 				depois = str(expressao[k][3])
@@ -262,9 +262,9 @@ def fonetiza(palavra):
 					depois = '\\' + depois
 				else:
 					depois = ''
-				
+
 				palavra = re.sub(expressao[k][0], antes + expressao[k][1] + depois, palavra, flags=re.IGNORECASE)
-			
+
 			k += 1
 
 	#RETORNA A "PALAVRA", TRANSFORMADA OU NÃO
@@ -318,7 +318,7 @@ if __name__ == '__main__':
 			print("É obrigatório informar a entrada (arquivo de texto original) OU o texto que será transcrito, após o comando `-t'")
 			print('Saída padrão: "fonetizado.txt"')
 			print('Codificação padrão: utf8')
-		elif sys.argv[1] == '-update': atualizar()
+		elif sys.argv[1] == '--atualizar': atualizar()
 		elif sys.argv[1] == '-t': main('interno', " ".join(sys.argv[2:]))
 		elif len(sys.argv) == 2: main(sys.argv[1])
 		elif len(sys.argv) == 3: main(sys.argv[1], sys.argv[2])
