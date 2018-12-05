@@ -276,14 +276,14 @@ def main(caminho, output='fonetizado.txt', CODE='utf8', CODEFINAL='utf8'):
 	#SE FOR INTERNO, O TEXTO ESTÁ NA VARIÁVEL OUTPUT
 	#CASO CONTRÁRIO, CARREGAR O ARQUIVO E SEPARAR LINHAS EM LISTAS
 	if caminho != 'interno':
-		texto = open(caminho, 'r', encoding=CODE).read().replace(';',' ; ').splitlines()
+		texto = open(caminho, 'r').read().replace(';',' ; ').splitlines()
 	else:
 		texto = output.splitlines()
 
 	#DESTACA A PONTUAÇÃO E SEPARA AS PALAVRAS (critério: espaço)
 	for i in range(len(texto)):
-		#for ponto in string.punctuation:
-			#texto[i] = texto[i].replace(ponto, ' ' + ponto + ' ')
+		for ponto in string.punctuation:
+			texto[i] = texto[i].replace(ponto, ' ' + ponto + ' ')
 		texto[i] = texto[i].split()
 
 	#FONETIZA PALAVRA POR PALAVRA
@@ -298,9 +298,9 @@ def main(caminho, output='fonetizado.txt', CODE='utf8', CODEFINAL='utf8'):
 	#SE FOR INTERNO, PRINTA
 	#SE NÃO, SALVA ARQUIVO OUTPUT
 	if caminho != 'interno':
-		open(output, 'w', encoding=CODEFINAL).write("\n".join(texto).replace(' ; ',';'))
+		open(output, 'w').write("\n".join(texto).replace(' ; ',';'))
 	else:
-		print("\n".join(texto))
+		return("\n".join(texto))
 
 
 if __name__ == '__main__':
@@ -319,7 +319,7 @@ if __name__ == '__main__':
 			print('Saída padrão: "fonetizado.txt"')
 			print('Codificação padrão: utf8')
 		elif sys.argv[1] == '-update': atualizar()
-		elif sys.argv[1] == '-t': main('interno', " ".join(sys.argv[2:]))
+		elif sys.argv[1] == '-t': print(main('interno', " ".join(sys.argv[2:])))
 		elif len(sys.argv) == 2: main(sys.argv[1])
 		elif len(sys.argv) == 3: main(sys.argv[1], sys.argv[2])
 		elif len(sys.argv) == 4: main(sys.argv[1], sys.argv[2], sys.argv[3])
@@ -327,3 +327,4 @@ if __name__ == '__main__':
 		else:
 			print('Argumentos demais')
 			print("Tente `-help' para mais informações")
+
