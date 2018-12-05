@@ -38,10 +38,10 @@ def fonetiza(palavra):
 	if re.match(r'^[^'+notword+']+$', palavra) and palavra.strip() != '':
 
 		#VOGAIS E CONSOANTESS
-		vt = r'ÄËÏÖÜÂÊÎÔÛ'
-		vd = r'AEIOUÃẼĨÕŨ'
+		vt = 'ÄËÏÖÜÂÊÎÔÛ'
+		vd = 'AEIOUÃẼĨÕŨ'
 		v = vt + vd
-		c = r'BCÇDFGHJKLMNPQRSTVWXYZ"234'
+		c = 'BCÇDFGHJKLMNPQRSTVWXYZ"234'
 
 		#CRIA A LISTA DAS REGRAS DE FONETIZAÇÃO
 		expressao = list()
@@ -276,7 +276,7 @@ def main(caminho, output='fonetizado.txt', CODE='utf8', CODEFINAL='utf8'):
 	#SE FOR INTERNO, O TEXTO ESTÁ NA VARIÁVEL OUTPUT
 	#CASO CONTRÁRIO, CARREGAR O ARQUIVO E SEPARAR LINHAS EM LISTAS
 	if caminho != 'interno':
-		texto = open(caminho, 'r').read().replace(';',' ; ').splitlines()
+		texto = open(caminho, 'r', encoding=CODE).read().replace(';',' ; ').splitlines()
 	else:
 		texto = output.splitlines()
 
@@ -298,7 +298,7 @@ def main(caminho, output='fonetizado.txt', CODE='utf8', CODEFINAL='utf8'):
 	#SE FOR INTERNO, PRINTA
 	#SE NÃO, SALVA ARQUIVO OUTPUT
 	if caminho != 'interno':
-		open(output, 'w').write("\n".join(texto).replace(' ; ',';'))
+		open(output, 'w', encoding=CODEFINAL).write("\n".join(texto).replace(' ; ',';'))
 	else:
 		return("\n".join(texto))
 
