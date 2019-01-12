@@ -6,6 +6,8 @@ Algumas opções de transcrição são da variante carioca do português brasile
 
 Para atualizar a versão do **fonetizador**, utilize o parâmetro *-update* .
 
+O **fonetizador** pode ser testado on-line pelo endereço: http://fonetizador.tronco.me/
+
 * [Exemplo](#exemplo)
 * [Como usar](#como-usar)
 * [Símbolos importantes](#símbolos-importantes)
